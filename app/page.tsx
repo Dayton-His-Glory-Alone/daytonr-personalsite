@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const posts = [
   { id: 1, title: "Failure", content: "Failure means you are trying to do something." },
-  { id: 2, title: "Legacy", content: "When I die, the only thing I want people to say is... <li>I loved Jesus<li>I loved my wife<li>I loved others" },
+  { id: 2, title: "Legacy", content: "When I die, the only thing I want people to say is... I loved Jesus, I loved my wife, and I loved others." },
 ];
 
 export default function Home() {
@@ -11,12 +11,12 @@ export default function Home() {
       <header className="text-center mb-10">
         <Image
           src="/next.svg"
-          alt="Next.js logo"
+          alt="logo"
           width={180}
           height={38}
           priority
         />
-        <h1 className="text-2xl font-bold mt-4">Sticky Note Blog</h1>
+        <h1 className="text-2xl font-bold mt-4">Blog</h1>
       </header>
 
       <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -35,14 +35,6 @@ export default function Home() {
       </main>
 
       <footer className="text-center mt-10">
-        <a
-          href="https://nextjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 hover:underline"
-        >
-          Powered by Next.js
-        </a>
       </footer>
     </div>
   );
