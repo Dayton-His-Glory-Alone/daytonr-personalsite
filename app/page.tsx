@@ -36,6 +36,20 @@ export default function Home() {
       </main>
 
       <footer className="text-center mt-10">
+        <h2 className="text-xl font-semibold mb-4">Projects</h2>
+        <div className="flex justify-center items-center space-x-4">
+          <div className="text-center">
+            <Image
+              src="/appicon.png"
+              alt="VerseVault"
+              width={80}
+              height={80}
+              className="rounded-lg shadow-lg"
+            />
+            <p className="mt-2 font-medium">VerseVault</p>
+            <p className="text-sm text-gray-600">Scripture Memory App</p>
+          </div>
+        </div>
       </footer>
     </div>
   );
