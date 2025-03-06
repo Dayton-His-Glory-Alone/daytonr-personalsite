@@ -40,6 +40,7 @@ export default function Home() {
         <h2 className="text-xl font-semibold mb-4">Projects</h2>
         <div className="flex justify-center items-center space-x-4">
           <div className="text-center">
+            <a href="https://www.myversevault.com">
             <Image
               src="/appicon.png"
               alt="VerseVault"
@@ -47,9 +48,25 @@ export default function Home() {
               height={80}
               className="rounded-lg shadow-lg"
             />
+              </a>
             <p className="mt-2 font-medium">VerseVault</p>
-            <p className="text-sm text-gray-600">Scripture Memory App</p>
+            <p className="text-sm text-gray-600">Scripture Memory App designed in Flutter</p>
           </div>
+
+            <div className="text-center">
+            <a href="https://www.truckdriversbest.com">
+            <Image
+              src="/appicon2.png"
+              alt="Truck Drivers Best"
+              width={80}
+              height={80}
+              className="rounded-lg shadow-lg"
+            />
+              </a>
+            <p className="mt-2 font-medium">Truck Drivers Best</p>
+            <p className="text-sm text-gray-600">Site conversion to Wordpress</p>
+          </div>
+          
         </div>
       </footer>
     </div>
