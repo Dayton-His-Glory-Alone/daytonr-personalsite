@@ -40,7 +40,7 @@ export default function Home() {
         <h2 className="text-xl font-semibold mb-4">Projects</h2>
         <div className="flex justify-center items-center space-x-4">
           <div className="text-center">
-            <a href="www.myversevault.com">
+            <a href="https://www.myversevault.com">
             <Image
               src="/appicon.png"
               alt="VerseVault"
@@ -54,7 +54,7 @@ export default function Home() {
           </div>
 
             <div className="text-center">
-            <a href="https://truckdriversbest.com/">
+            <a href="https://www.truckdriversbest.com">
             <Image
               src="/appicon2.png"
               alt="Truck Drivers Best"
