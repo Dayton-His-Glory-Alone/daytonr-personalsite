@@ -54,7 +54,7 @@ export default function Home() {
           </div>
 
             <div className="text-center">
-            <a href="www.truckdriversbest.com">
+            <a href="https://truckdriversbest.com/">
             <Image
               src="/appicon2.png"
               alt="Truck Drivers Best"
