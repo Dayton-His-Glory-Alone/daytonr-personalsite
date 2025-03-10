@@ -5,6 +5,7 @@ const posts = [
   { id: 2, title: "Legacy", content: "When I die, the only thing I want people to say is... I loved Jesus, I loved my wife, and I loved others." },
   { id: 3, title: "Freedom", content: "Freedom never comes without great price." },
   { id: 3, title: "Falling", content: "When you fall: get up, get up, and get up again. Don't let bitterness and regret overtake you." },
+  { id: 4, title: "Worry", content: "We spend so much time worrying about this life, we forget about the next." },
 ];
 
 export default function Home() {
