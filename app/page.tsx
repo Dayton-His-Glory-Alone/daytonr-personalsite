@@ -22,7 +22,7 @@ export default function Home() {
           {[
             {
               title: "Marketing Strategy",
-              desc: "Craft campaigns that resonate. I’ll help define your voice, grow your audience, and drive results.",
+              desc: "Craft campaigns that resonate. I'll help define your voice, grow your audience, and drive results.",
               icon: "/appicon3.png",
               href: "https://www.nussbaum.com",
             },
@@ -59,7 +59,7 @@ export default function Home() {
           <div className="cursor-pointer inline-block bg-yellow-300 p-6 rounded-lg shadow-md transform rotate-[-2deg] hover:rotate-0 transition-transform max-w-md">
             <h3 className="text-lg font-bold mb-2">Falling</h3>
             <p className="text-sm">
-              When you fall: get up, get up, and get up again. Don’t let bitterness and regret overtake you.
+              When you fall: get up, get up, and get up again. Dont let bitterness and regret overtake you.
             </p>
             <p className="mt-3 text-xs underline text-gray-700">Read all notes →</p>
           </div>
@@ -70,7 +70,7 @@ export default function Home() {
       <footer className="text-center py-10 px-6 bg-[#f0ede6]">
         <p className="text-sm">Ready to take your brand further?</p>
         <a href="mailto:youremail@example.com" className="text-lg font-medium underline hover:text-black">
-          Let’s Connect
+          Lets Connect
         </a>
         <p className="mt-4 text-xs text-gray-500">© {new Date().getFullYear()} Your Name. All rights reserved.</p>
       </footer>
