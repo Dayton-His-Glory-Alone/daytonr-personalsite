@@ -10,16 +10,10 @@ const posts = [
 
 export default function Home() {
   return (
+            <h1 className="text-2xl font-bold mt-4">EXPAND YOUR REACH</h1>
     <div className="min-h-screen p-8 bg-[#f7f3e9]">
       <header className="text-center mb-10">
-        <Image
-          src="/next.svg"
-          alt="logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <h1 className="text-2xl font-bold mt-4">Blog</h1>
+     <h1 className="text-2xl font-bold mt-4">Blog</h1>
       </header>
 
       <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
