@@ -7,7 +7,7 @@ export default function ServicesPage() {
       <header className="text-center mb-16">
         <h1 className="text-4xl font-bold mb-4">How I Help You Grow</h1>
         <p className="text-lg max-w-2xl mx-auto">
-          Whether you're a small business, a startup, or an established brand, I offer solutions that help you
+          Whether you are a small business, a startup, or an established brand, I offer solutions that help you
           connect better, run smarter, and grow faster.
         </p>
       </header>
@@ -61,7 +61,7 @@ export default function ServicesPage() {
 
       <section className="text-center">
         <h2 className="text-2xl font-bold mb-4">Let’s Build Something Great</h2>
-        <p className="mb-6">Reach out today and let's talk about how I can help your business thrive.</p>
+        <p className="mb-6">Reach out today and let us talk about how I can help your business thrive.</p>
         <Link href="mailto:youremail@example.com" className="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition">
           Contact Me
         </Link>
