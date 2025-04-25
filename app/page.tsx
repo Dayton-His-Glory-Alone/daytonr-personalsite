@@ -3,72 +3,76 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen p-8 bg-[#f7f3e9]">
-      <header className="text-center mb-10">
-        <h1 className="text-2xl font-bold mt-4">EXPAND YOUR REACH</h1>
-      </header>
-
-      <hr className="mb-10 border-gray-400" />
-
-      <header className="text-center mb-6">
-        <h1 className="text-2xl font-bold mt-4">Blog</h1>
-      </header>
-
-      <main className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6 mb-12">
-        <Link href="/blog">
-          <div
-            className="cursor-pointer bg-yellow-300 shadow-md p-4 rounded-lg transform rotate-[-2deg] hover:rotate-0 transition-transform"
-            style={{
-              boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.2)",
-            }}
-          >
-            <h2 className="text-lg font-semibold mb-2">Latest Thought</h2>
-            <p className="text-sm text-gray-800">
-              When you fall: get up, get up, and get up again. Don&rsquo;t let bitterness and regret overtake you.
-            </p>
-            <p className="mt-2 text-xs text-gray-600 underline">Read all notes →</p>
-          </div>
+    <div className="min-h-screen bg-[#f7f3e9] text-gray-800">
+      {/* Hero Section */}
+      <section className="text-center py-16 px-6">
+        <h1 className="text-4xl font-bold mb-4">Grow Your Business with Strategic Marketing & Custom Software</h1>
+        <p className="text-lg max-w-2xl mx-auto">
+          I help businesses like yours expand their digital footprint, automate processes, and build meaningful connections with customers.
+        </p>
+        <Link href="#services" className="inline-block mt-6 bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition">
+          See What I Can Do for You
         </Link>
-      </main>
+      </section>
 
-      <footer className="text-center mt-10">
-        <h2 className="text-xl font-semibold mb-4">Projects</h2>
-        <div className="flex flex-wrap justify-center items-center gap-6">
+      {/* Services / Projects */}
+      <section id="services" className="py-16 px-8 bg-white">
+        <h2 className="text-3xl font-semibold text-center mb-12">What I Offer</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {[
             {
-              href: "https://www.myversevault.com",
-              src: "/appicon.png",
-              title: "VerseVault",
-              desc: "Scripture Memory App designed in Flutter",
-            },
-            {
+              title: "Marketing Strategy",
+              desc: "Craft campaigns that resonate. I’ll help define your voice, grow your audience, and drive results.",
+              icon: "/appicon3.png",
               href: "https://www.nussbaum.com",
-              src: "/appicon3.png",
-              title: "Nussbaum",
-              desc: "Maintain website and online presence",
             },
             {
-              href: "https://www.truckdriversbest.com",
-              src: "/appicon2.png",
-              title: "Truck Drivers Best",
-              desc: "Site conversion to Wordpress",
+              title: "Custom Software",
+              desc: "From apps to automation, I develop tailored software solutions that make your work easier and more powerful.",
+              icon: "/appicon.png",
+              href: "https://www.myversevault.com",
             },
-          ].map((project) => (
-            <div className="text-center" key={project.title}>
-              <a href={project.href}>
-                <Image
-                  src={project.src}
-                  alt={project.title}
-                  width={80}
-                  height={80}
-                  className="rounded-lg shadow-lg"
-                />
-              </a>
-              <p className="mt-2 font-medium">{project.title}</p>
-              <p className="text-sm text-gray-600">{project.desc}</p>
-            </div>
+            {
+              title: "Web Presence",
+              desc: "Make your website work for you. I design, build, and manage sites that convert and captivate.",
+              icon: "/appicon2.png",
+              href: "https://www.truckdriversbest.com",
+            },
+          ].map((service) => (
+            <a
+              key={service.title}
+              href={service.href}
+              className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300"
+            >
+              <Image src={service.icon} alt={service.title} width={60} height={60} className="mb-4 mx-auto" />
+              <h3 className="text-xl font-bold text-center mb-2">{service.title}</h3>
+              <p className="text-sm text-center">{service.desc}</p>
+            </a>
           ))}
         </div>
+      </section>
+
+      {/* Blog Section */}
+      <section className="text-center py-16 px-6">
+        <h2 className="text-3xl font-semibold mb-8">Latest Thought</h2>
+        <Link href="/blog">
+          <div className="cursor-pointer inline-block bg-yellow-300 p-6 rounded-lg shadow-md transform rotate-[-2deg] hover:rotate-0 transition-transform max-w-md">
+            <h3 className="text-lg font-bold mb-2">Falling</h3>
+            <p className="text-sm">
+              When you fall: get up, get up, and get up again. Don’t let bitterness and regret overtake you.
+            </p>
+            <p className="mt-3 text-xs underline text-gray-700">Read all notes →</p>
+          </div>
+        </Link>
+      </section>
+
+      {/* Footer */}
+      <footer className="text-center py-10 px-6 bg-[#f0ede6]">
+        <p className="text-sm">Ready to take your brand further?</p>
+        <a href="mailto:youremail@example.com" className="text-lg font-medium underline hover:text-black">
+          Let’s Connect
+        </a>
+        <p className="mt-4 text-xs text-gray-500">© {new Date().getFullYear()} Your Name. All rights reserved.</p>
       </footer>
     </div>
   );
