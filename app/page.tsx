@@ -10,8 +10,11 @@ const posts = [
 
 export default function Home() {
   return (
-            <h1 className="text-2xl font-bold mt-4">EXPAND YOUR REACH</h1>
     <div className="min-h-screen p-8 bg-[#f7f3e9]">
+            <header className="text-center mb-10">
+     <h1 className="text-2xl font-bold mt-4">EXPAND YOUR REACH</h1>
+      </header>
+      <HR></HR>
       <header className="text-center mb-10">
      <h1 className="text-2xl font-bold mt-4">Blog</h1>
       </header>
