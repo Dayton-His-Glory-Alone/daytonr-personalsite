@@ -10,7 +10,7 @@ export default function Home() {
         <p className="text-lg max-w-2xl mx-auto">
           I help businesses like yours expand their digital footprint, automate processes, and build meaningful connections with customers.
         </p>
-        <Link href="#services" className="inline-block mt-6 bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition">
+        <Link href="services" className="inline-block mt-6 bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition">
           See What I Can Do for You
         </Link>
       </section>
