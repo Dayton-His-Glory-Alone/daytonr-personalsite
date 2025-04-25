@@ -22,7 +22,7 @@ export default function Home() {
           {[
             {
               title: "Marketing Strategy",
-              desc: "Craft campaigns that resonate. I'll help define your voice, grow your audience, and drive results.",
+              desc: "Craft campaigns that resonate. Ill help define your voice, grow your audience, and drive results.",
               icon: "/appicon3.png",
               href: "https://www.nussbaum.com",
             },
