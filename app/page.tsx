@@ -53,7 +53,6 @@ export default function Home() {
             <p className="mt-2 font-medium">VerseVault</p>
             <p className="text-sm text-gray-600">Scripture Memory App designed in Flutter</p>
           </div>
-        <div className="flex justify-center items-center space-x-4">
           <div className="text-center">
             <a href="https://www.nussbaum.com">
             <Image
