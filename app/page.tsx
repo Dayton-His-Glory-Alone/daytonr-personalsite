@@ -24,7 +24,7 @@ export default function Home() {
           >
             <h2 className="text-lg font-semibold mb-2">Latest Thought</h2>
             <p className="text-sm text-gray-800">
-              When you fall: get up, get up, and get up again. Don't let bitterness and regret overtake you.
+              When you fall: get up, get up, and get up again. Don&rsquo;t let bitterness and regret overtake you.
             </p>
             <p className="mt-2 text-xs text-gray-600 underline">Read all notes →</p>
           </div>
