@@ -5,6 +5,7 @@ const posts = [
   { id: 4, title: "Falling", content: "When you fall: get up, get up, and get up again. Dont let bitterness and regret overtake you." },
   { id: 5, title: "Worry", content: "We spend so much time worrying about this life, we forget about the next." },
   { id: 6, title: "Bad Days", content: "Not every day will be great but God will always be good." },
+  { id: 7, title: "Productivity", content: "The best day to do something is today." },
 ];
 
 export default function Blog() {
