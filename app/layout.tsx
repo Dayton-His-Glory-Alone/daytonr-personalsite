@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "DaytonRumbold.com",
-  description: "my personal website",
+  title: "Have your Brand Stand Out: Mobile App Creation, Film, Website",
+  description: "Standout Solutions",
 };
 
 export default function RootLayout({
