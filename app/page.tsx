@@ -194,16 +194,16 @@ export default function Home() {
       </footer>
 
       {/* Add CSS for the spinning animation */}
-      <style jsx global>{`
-        @keyframes spin-slow {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
-        }
-        .animate-spin-slow {
-          animation: spin-slow 15s linear infinite;
-          transform-origin: 50% 50%;
-        }
-      `}</style>
+   <style jsx global>{`
+  @keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .animate-spin-slow {
+    animation: spin-slow 15s linear infinite alternate;
+    transform-origin: 50% 50%;
+  }
+`}</style>
     </div>
   );
 }
