@@ -1,29 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#f7f3e9] text-gray-800">
-      {/* Google Calendar Scheduling Button */}
-      <link
-        href="https://calendar.google.com/calendar/scheduling-button-script.css"
-        rel="stylesheet"
-      />
-      <Script
-        src="https://calendar.google.com/calendar/scheduling-button-script.js"
-        strategy="afterInteractive"
-        onLoad={() => {
-          if (window?.calendar?.schedulingButton) {
-            window.calendar.schedulingButton.load({
-              url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3oCD3WvYeVh1Vm7-ONpzN9zxpOfBC2UtfkL0jslYM4GclsH6r52G8SYYOYQZ8D8oMt1Aw6v0eO?gv=true",
-              color: "#039BE5",
-              label: "Book an appointment",
-            });
-          }
-        }}
-      />
-
       {/* Hero Section */}
       <section className="text-center py-16 px-6">
         <h1 className="text-4xl font-bold mb-4">
@@ -33,12 +13,24 @@ export default function Home() {
           I help businesses like yours expand their digital footprint, automate
           processes, and build meaningful connections with customers.
         </p>
+
+        {/* Services button */}
         <Link
           href="services"
           className="inline-block mt-6 bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition"
         >
           See What I Can Do for You
         </Link>
+
+        {/* Appointment button */}
+        <a
+          href="https://calendar.app.google/9QHdAtmbYtDjjcDM9"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mt-4 bg-[#039BE5] text-white px-6 py-3 rounded-lg hover:bg-[#0288d1] transition"
+        >
+          Book an Appointment
+        </a>
       </section>
 
       {/* Services / Projects */}
