@@ -95,6 +95,19 @@ export default function Home() {
           ))}
         </div>
       </section>
+            {/* Footer */}
+      <footer className="text-center py-10 px-6 bg-[#f0ede6]">
+        <p className="text-sm">Ready to take your brand further?</p>
+        <a
+          href="mailto:youremail@example.com"
+          className="text-lg font-medium underline hover:text-black"
+        >
+          Lets Connect
+        </a>
+        <p className="mt-4 text-xs text-gray-500">
+          © {new Date().getFullYear()} Your Name. All rights reserved.
+        </p>
+      </footer>
     </div>
   );
 }
