@@ -51,28 +51,30 @@ export default function Home() {
           ))}
         </div>
       </section>
-    <div className="min-h-screen bg-[#f7f3e9] text-gray-800">
-      {/* Google Calendar Scheduling Button */}
-      <link
-        href="https://calendar.google.com/calendar/scheduling-button-script.css"
-        rel="stylesheetom/calendar/scheduling-button-script.js" asyncipt
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function() {
-              var target = document.currentScript;
-              window.addEventListener('load', function() {
-                calendar.schedulingButton.load({
-                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3oCD3WvYeVh1Vm7-ONpzN9zxpOfBC2UtfkL0jslYM4GclsH6r52G8SYYOYQZ8D8oMt1Aw6v0eO?gv=true',
-                  color: '#039BE5',
-                  label: "Book a Call",
-                  target,
-                });
-              });
-            })();
-          `,
-        }}
-      />
-    </div>
+<div className="min-h-screen bg-[#f7f3e9] text-gray-800">
+  {/* Google Calendar Scheduling Button */}
+  <link
+    href="https://calendar.google.com/calendar/scheduling-button-script.css"
+    rel="stylesheet"
+/scheduling-button-script.js</script>
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `
+        (function() {
+          var target = document.currentScript;
+          window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3oCD3WvYeVh1Vm7-ONpzN9zxpOfBC2UtfkL0jslYM4GclsH6r52G8SYYOYQZ8D8oMt1Aw6v0eO?gv=true',
+              color: '#039BE5',
+              label: "Book a Call",
+              target,
+            });
+          });
+        })();
+      `,
+    }}
+  />
+</div>
 
 
 
