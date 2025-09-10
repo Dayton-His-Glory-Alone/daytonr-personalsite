@@ -81,15 +81,15 @@ export default function Home() {
                     href="/calebjoefounders.png" 
                     x="50" 
                     y="50" 
-                    width="100" 
-                    height="100" 
+                    width="140" 
+                    height="140" 
                   />
 
                   {/* Rotating text */}
                   <g className="animate-spin-slow">
                     <text className="fill-green-600 font-bold text-[16px]">
                       <textPath href="#circlePath" startOffset="0%">
-                        saved $300/year in hosting costs. • saved $300/year in hosting costs. •
+                        saved $300/year in hosting costs. ••
                       </textPath>
                     </text>
                   </g>
