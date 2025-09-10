@@ -5,32 +5,47 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#f7f3e9] text-gray-800">
       {/* Hero Section */}
-      <section className="text-center py-16 px-6">
-        <h1 className="text-4xl font-bold mb-4">
-          Grow Your Business with Strategic Marketing & Custom Software
-        </h1>
-        <p className="text-lg max-w-2xl mx-auto">
-          I help businesses like yours expand their digital footprint, automate
-          processes, and build meaningful connections with customers.
-        </p>
+      <section className="relative w-full h-screen flex items-center justify-center text-center text-white overflow-hidden">
+        {/* Background Video */}
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
+          <iframe
+            className="w-full h-full absolute top-0 left-0 object-cover"
+            src="https://www.youtube.com/embed/1c9XhCE5W54?autoplay=1&mute=1&loop=1&playlist=1c9XhCE5W54&controls=0&showinfo=0&modestbranding=1"
+            title="Background video"
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+          ></iframe>
+          <div className="absolute inset-0 bg-black bg-opacity-50" /> {/* Overlay for readability */}
+        </div>
 
-        {/* Services button */}
-        <Link
-          href="services"
-          className="inline-block mt-6 bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition"
-        >
-          See What I Can Do for You
-        </Link>
-      <br></br>
-        {/* Appointment button */}
-        <a
-          href="https://calendar.app.google/9QHdAtmbYtDjjcDM9"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block mt-4 bg-[#039BE5] text-white px-6 py-3 rounded-lg hover:bg-[#0288d1] transition"
-        >
-          Book an Appointment
-        </a>
+        {/* Hero Content */}
+        <div className="relative z-10 px-6">
+          <h1 className="text-4xl font-bold mb-4">
+            Grow Your Business with Strategic Marketing & Custom Software
+          </h1>
+          <p className="text-lg max-w-2xl mx-auto mb-6">
+            I help businesses like yours expand their digital footprint, automate
+            processes, and build meaningful connections with customers.
+          </p>
+
+          {/* Services button */}
+          <Link
+            href="services"
+            className="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition"
+          >
+            See What I Can Do for You
+          </Link>
+          <br />
+          {/* Appointment button */}
+          <a
+            href="https://calendar.app.google/9QHdAtmbYtDjjcDM9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-4 bg-[#039BE5] text-white px-6 py-3 rounded-lg hover:bg-[#0288d1] transition"
+          >
+            Book an Appointment
+          </a>
+        </div>
       </section>
 
       {/* Services / Projects */}
@@ -79,37 +94,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      {/* Blog Section */}
-      <section className="text-center py-16 px-6">
-        <h2 className="text-3xl font-semibold mb-8">Latest Thought</h2>
-        <Link href="/blog">
-          <div className="cursor-pointer inline-block bg-yellow-300 p-6 rounded-lg shadow-md transform rotate-[-2deg] hover:rotate-0 transition-transform max-w-md">
-            <h3 className="text-lg font-bold mb-2">Falling</h3>
-            <p className="text-sm">
-              When you fall: get up, get up, and get up again. Dont let
-              bitterness and regret overtake you.
-            </p>
-            <p className="mt-3 text-xs underline text-gray-700">
-              Read all notes →
-            </p>
-          </div>
-        </Link>
-      </section>
-
-      {/* Footer */}
-      <footer className="text-center py-10 px-6 bg-[#f0ede6]">
-        <p className="text-sm">Ready to take your brand further?</p>
-        <a
-          href="mailto:youremail@example.com"
-          className="text-lg font-medium underline hover:text-black"
-        >
-          Lets Connect
-        </a>
-        <p className="mt-4 text-xs text-gray-500">
-          © {new Date().getFullYear()} Your Name. All rights reserved.
-        </p>
-      </footer>
     </div>
   );
 }
