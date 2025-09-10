@@ -52,6 +52,22 @@ export default function Home() {
         </div>
       </section>
 
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+(function() {
+  var target = document.currentScript;
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3oCD3WvYeVh1Vm7-ONpzN9zxpOfBC2UtfkL0jslYM4GclsH6r52G8SYYOYQZ8D8oMt1Aw6v0eO?gv=true',
+      color: '#039BE5',
+      label: "Book a Call",
+      target,
+    });
+  });
+})();
+</script>
+
       {/* Blog Section */}
       <section className="text-center py-16 px-6">
         <h2 className="text-3xl font-semibold mb-8">Latest Thought</h2>
