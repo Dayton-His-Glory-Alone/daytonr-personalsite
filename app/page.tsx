@@ -200,7 +200,7 @@ export default function Home() {
     to { transform: rotate(100deg); }
   }
   .animate-spin-slow {
-    animation: spin-slow 15s linear infinite alternate;
+    animation: spin-slow 6s linear infinite alternate;
     transform-origin: 50% 50%;
   }
 `}</style>
