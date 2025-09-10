@@ -21,7 +21,7 @@ export default function Home() {
         >
           See What I Can Do for You
         </Link>
-
+      <br></br>
         {/* Appointment button */}
         <a
           href="https://calendar.app.google/9QHdAtmbYtDjjcDM9"
