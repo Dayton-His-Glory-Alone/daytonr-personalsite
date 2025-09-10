@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
-import React from "React";
+import React from "react"; // Fixed capitalization
 
 export default function Home() {
   return (
@@ -75,11 +75,11 @@ export default function Home() {
                 width="100" 
                 height="100" 
               />
-              <text className="text-path">
+              <text className="text-green-600 font-bold text-[16px]">
                 <textPath 
                   href="#circlePath" 
                   startOffset="0%" 
-                  className="rotating-text"
+                  className="animate-spin-slow origin-center"
                 >
                   saved $300/year in hosting costs. • saved $300/year in hosting costs. •
                 </textPath>
@@ -120,28 +120,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-      
-      <style jsx>{`
-        @keyframes rotate {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
-        }
-        
-        .rotating-text {
-          animation: rotate 15s linear infinite;
-          transform-origin: center;
-        }
-        
-        .text-path {
-          fill: #22c55e;
-          font-weight: bold;
-          font-size: 16px;
-        }
-      `}</style>
     </section>
 
       
@@ -191,7 +169,8 @@ export default function Home() {
           ))}
         </div>
       </section>
-            {/* Footer */}
+      
+      {/* Footer */}
       <footer className="text-center py-10 px-6 bg-[#f0ede6]">
         <p className="text-sm">Ready to take your brand further?</p>
         <a
