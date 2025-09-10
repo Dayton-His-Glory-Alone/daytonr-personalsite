@@ -54,29 +54,30 @@ export default function Home() {
       </section>
 
 
-      <div className="min-h-screen bg-[#f7f3e9] text-gray-800">
-  {/* Google Calendar Scheduling Button */}
-  <link
-    href="https://calendar.google.com/calendar/scheduling-button-script.css"
-    rel="stylesheet"
-  />
-  <Script src="https://calendar.google.com/calendar/scheduling-button-script.js" />
-  <Script id="google-calendar-btn" strategy="afterInteractive">
-    {`
-      (function() {
-        var target = document.currentScript;
-        window.addEventListener('load', function() {
-          calendar.schedulingButton.load({
-            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3oCD3WvYeVh1Vm7-ONpzN9zxpOfBC2UtfkL0jslYM4GclsH6r52G8SYYOYQZ8D8oMt1Aw6v0eO?gv=true',
-            color: '#039BE5',
-            label: "Book a Call",
-            target,
+ <div className="min-h-screen bg-[#f7f3e9] text-gray-800">
+      {/* Google Calendar Scheduling Button */}
+      <link
+        href="https://calendar.google.com/calendar/scheduling-button-script.css"
+        rel="stylesheet"
+      />
+      <Script src="https://calendar.google.com/calendar/scheduling-button-script.js" />
+      <div id="calendar-button"></div>
+
+      <Script id="google-calendar-btn" strategy="afterInteractive">
+        {`
+          window.addEventListener('load', function() {
+            if (window.calendar && window.calendar.schedulingButton) {
+              window.calendar.schedulingButton.load({
+                url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3oCD3WvYeVh1Vm7-ONpzN9zxpOfBC2UtfkL0jslYM4GclsH6r52G8SYYOYQZ8D8oMt1Aw6v0eO?gv=true',
+                color: '#039BE5',
+                label: "Book a Call",
+                target: document.getElementById('calendar-button'),
+              });
+            }
           });
-        });
-      })();
-    `}
-  </Script>
-</div>
+        `}
+      </Script>
+    </div>
 
 
 
