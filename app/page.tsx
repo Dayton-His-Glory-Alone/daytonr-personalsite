@@ -89,7 +89,7 @@ export default function Home() {
                   <g className="animate-spin-slow">
                     <text className="fill-green-600 font-bold text-[16px]">
                       <textPath href="#circlePath" startOffset="0%">
-                        saved $300/year in hosting costs. ••  ••  ••  •
+                        saved $300/year in hosting costs. •
                       </textPath>
                     </text>
                   </g>
