@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import React from "React";
 
 export default function Home() {
   return (
@@ -49,6 +50,100 @@ export default function Home() {
         </div>
       </section>
 
+
+    <section id="what-weve-done" className="py-16 px-8 bg-white">
+      <h2 className="text-3xl font-semibold text-center mb-12">
+        What We&apos;ve Done
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        {/* First Card with Rotating Text */}
+        <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
+          <div className="relative w-40 h-40 mb-4">
+            <svg className="w-full h-full" viewBox="0 0 200 200">
+              <defs>
+                <path 
+                  id="circlePath" 
+                  d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" 
+                />
+              </defs>
+              <circle cx="100" cy="100" r="75" fill="#f8fafc" />
+              <image 
+                href="/calebjoefounders.png" 
+                x="50" 
+                y="50" 
+                width="100" 
+                height="100" 
+              />
+              <text className="text-path">
+                <textPath 
+                  href="#circlePath" 
+                  startOffset="0%" 
+                  className="rotating-text"
+                >
+                  saved $300/year in hosting costs. • saved $300/year in hosting costs. •
+                </textPath>
+              </text>
+            </svg>
+          </div>
+          <h3 className="text-xl font-bold text-center mb-2">
+            Project Success
+          </h3>
+          <p className="text-sm text-center">
+            Delivered exceptional results that significantly reduced operational costs while improving performance.
+          </p>
+        </div>
+
+        {/* Placeholder Card 1 */}
+        <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
+          <div className="w-40 h-40 mb-4 rounded-full bg-gray-200 flex items-center justify-center">
+            <span className="text-gray-500">Image Placeholder</span>
+          </div>
+          <h3 className="text-xl font-bold text-center mb-2">
+            Client Achievement
+          </h3>
+          <p className="text-sm text-center">
+            Another successful project delivering value and innovation to our clients.
+          </p>
+        </div>
+
+        {/* Placeholder Card 2 */}
+        <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
+          <div className="w-40 h-40 mb-4 rounded-full bg-gray-200 flex items-center justify-center">
+            <span className="text-gray-500">Image Placeholder</span>
+          </div>
+          <h3 className="text-xl font-bold text-center mb-2">
+            Business Growth
+          </h3>
+          <p className="text-sm text-center">
+            Helped businesses expand their reach and increase revenue through strategic solutions.
+          </p>
+        </div>
+      </div>
+      
+      <style jsx>{`
+        @keyframes rotate {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+        
+        .rotating-text {
+          animation: rotate 15s linear infinite;
+          transform-origin: center;
+        }
+        
+        .text-path {
+          fill: #22c55e;
+          font-weight: bold;
+          font-size: 16px;
+        }
+      `}</style>
+    </section>
+
+      
       {/* Services / Projects */}
       <section id="services" className="py-16 px-8 bg-white">
         <h2 className="text-3xl font-semibold text-center mb-12">
