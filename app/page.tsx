@@ -74,7 +74,6 @@ export default function Home() {
         }}
       />
 
-    </div>
       {/* Blog Section */}
       <section className="text-center py-16 px-6">
         <h2 className="text-3xl font-semibold mb-8">Latest Thought</h2>
