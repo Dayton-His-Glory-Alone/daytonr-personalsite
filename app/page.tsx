@@ -197,7 +197,7 @@ export default function Home() {
    <style jsx global>{`
   @keyframes spin-slow {
     from { transform: rotate(0deg); }
-    to { transform: rotate(270deg); }
+    to { transform: rotate(100deg); }
   }
   .animate-spin-slow {
     animation: spin-slow 15s linear infinite alternate;
