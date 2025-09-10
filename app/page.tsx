@@ -53,34 +53,37 @@ export default function Home() {
         </div>
       </section>
 
-    <div className="min-h-screen bg-[#f7f3e9] text-gray-800">
-      {/* Google Calendar Scheduling Button */}
-      <link
-        href="https://calendar.google.com/calendar/scheduling-button-script.css"
-        rel="stylesheet"
-      />
-      <Script src="https://calendar.google.com/calendar/scheduling-button-script.js" />
+{/* Google Calendar Scheduling Button */}
+<link
+  href="https://calendar.google.com/calendar/scheduling-button-script.css"
+  rel="stylesheet"
+/>
+<Script src="https://calendar.google.com/calendar/scheduling-button-script.js" />
 
-      {/* Centered container for the button */}
-      <div className="flex justify-center mt-10 mb-6">
-        <div id="calendar-button" className="scale-110"></div>
-      </div>
+{/* Centered container */}
+<div className="flex justify-center my-8">
+  <div
+    id="calendar-button"
+    className="[&>button]:!px-8 [&>button]:!py-4 [&>button]:!text-lg [&>button]:!rounded-lg [&>button]:!shadow-md"
+  ></div>
+</div>
 
-      <Script id="google-calendar-btn" strategy="afterInteractive">
-        {`
-          window.addEventListener('load', function() {
-            if (window.calendar && window.calendar.schedulingButton) {
-              window.calendar.schedulingButton.load({
-                url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3oCD3WvYeVh1Vm7-ONpzN9zxpOfBC2UtfkL0jslYM4GclsH6r52G8SYYOYQZ8D8oMt1Aw6v0eO?gv=true',
-                color: '#039BE5',
-                label: "📅 Book a Call",
-                target: document.getElementById('calendar-button'),
-              });
-            }
-          });
-        `}
-      </Script>
-    </div>
+<Script id="google-calendar-btn" strategy="afterInteractive">
+  {`
+    window.addEventListener('load', function() {
+      if (window.calendar && window.calendar.schedulingButton) {
+        window.calendar.schedulingButton.load({
+          url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3oCD3WvYeVh1Vm7-ONpzN9zxpOfBC2UtfkL0jslYM4GclsH6r52G8SYYOYQZ8D8oMt1Aw6v0eO?gv=true',
+          color: '#039BE5',
+          label: "📅 Book a Call",
+          target: document.getElementById('calendar-button'),
+        });
+      }
+    });
+  `}
+</Script>
+
+      
       {/* Blog Section */}
       <section className="text-center py-16 px-6">
         <h2 className="text-3xl font-semibold mb-8">Latest Thought</h2>
