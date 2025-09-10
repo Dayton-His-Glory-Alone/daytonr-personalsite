@@ -7,16 +7,17 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative w-full h-screen flex items-center justify-center text-center text-white overflow-hidden">
         {/* Background Video */}
-        <div className="absolute inset-0 w-full h-full overflow-hidden">
-          <iframe
-            className="w-full h-full absolute top-0 left-0 object-cover"
-            src="https://www.youtube.com/embed/1c9XhCE5W54?autoplay=1&mute=1&loop=1&playlist=1c9XhCE5W54&controls=0&showinfo=0&modestbranding=1"
-            title="Background video"
-            frameBorder="0"
-            allow="autoplay; fullscreen"
-          ></iframe>
-          <div className="absolute inset-0 bg-black bg-opacity-50" /> {/* Overlay for readability */}
-        </div>
+        <video
+          autoPlay
+          muted
+          loop
+          className="absolute top-0 left-0 w-full h-full object-cover"
+        >
+          <source src="/videoplayback.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        {/* Overlay for readability */}
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
         {/* Hero Content */}
         <div className="relative z-10 px-6">
