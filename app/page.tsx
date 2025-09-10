@@ -1,9 +1,13 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
-import React from "react"; // Fixed capitalization
+import React, { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    // This ensures the animation works after hydration
+  }, []);
+
   return (
     <div className="min-h-screen bg-[#f7f3e9] text-gray-800">
       {/* Hero Section */}
@@ -51,77 +55,78 @@ export default function Home() {
         </div>
       </section>
 
-
-    <section id="what-weve-done" className="py-16 px-8 bg-white">
-      <h2 className="text-3xl font-semibold text-center mb-12">
-        What We&apos;ve Done
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-        {/* First Card with Rotating Text */}
-        <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
-          <div className="relative w-40 h-40 mb-4">
-            <svg className="w-full h-full" viewBox="0 0 200 200">
-              <defs>
-                <path 
-                  id="circlePath" 
-                  d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" 
-                />
-              </defs>
-              <circle cx="100" cy="100" r="75" fill="#f8fafc" />
-              <image 
-                href="/calebjoefounders.png" 
-                x="50" 
-                y="50" 
-                width="100" 
-                height="100" 
-              />
-              <text className="text-green-600 font-bold text-[16px]">
-                <textPath 
-                  href="#circlePath" 
-                  startOffset="0%" 
-                  className="animate-spin-slow origin-center"
-                >
-                  saved $300/year in hosting costs. • saved $300/year in hosting costs. •
-                </textPath>
-              </text>
-            </svg>
+      {/* What We've Done Section */}
+      <section id="what-weve-done" className="py-16 px-8 bg-white">
+        <h2 className="text-3xl font-semibold text-center mb-12">
+          What We&apos;ve Done
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+          {/* First Card with Rotating Text */}
+          <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
+            <div className="relative w-40 h-40 mb-4">
+              <div className="relative w-full h-full">
+                <svg className="w-full h-full" viewBox="0 0 200 200">
+                  <defs>
+                    <path 
+                      id="circlePath" 
+                      d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" 
+                    />
+                  </defs>
+                  <circle cx="100" cy="100" r="75" fill="#f8fafc" />
+                  <image 
+                    href="/calebjoefounders.png" 
+                    x="50" 
+                    y="50" 
+                    width="100" 
+                    height="100" 
+                  />
+                  <text className="text-green-600 font-bold text-[16px]">
+                    <textPath 
+                      href="#circlePath" 
+                      startOffset="0%" 
+                      className="animate-spin-slow origin-center"
+                    >
+                      saved $300/year in hosting costs. • saved $300/year in hosting costs. •
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
+            </div>
+            <h3 className="text-xl font-bold text-center mb-2">
+              Project Success
+            </h3>
+            <p className="text-sm text-center">
+              Delivered exceptional results that significantly reduced operational costs while improving performance.
+            </p>
           </div>
-          <h3 className="text-xl font-bold text-center mb-2">
-            Project Success
-          </h3>
-          <p className="text-sm text-center">
-            Delivered exceptional results that significantly reduced operational costs while improving performance.
-          </p>
-        </div>
 
-        {/* Placeholder Card 1 */}
-        <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
-          <div className="w-40 h-40 mb-4 rounded-full bg-gray-200 flex items-center justify-center">
-            <span className="text-gray-500">Image Placeholder</span>
+          {/* Placeholder Card 1 */}
+          <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
+            <div className="w-40 h-40 mb-4 rounded-full bg-gray-200 flex items-center justify-center">
+              <span className="text-gray-500">Image Placeholder</span>
+            </div>
+            <h3 className="text-xl font-bold text-center mb-2">
+              Client Achievement
+            </h3>
+            <p className="text-sm text-center">
+              Another successful project delivering value and innovation to our clients.
+            </p>
           </div>
-          <h3 className="text-xl font-bold text-center mb-2">
-            Client Achievement
-          </h3>
-          <p className="text-sm text-center">
-            Another successful project delivering value and innovation to our clients.
-          </p>
-        </div>
 
-        {/* Placeholder Card 2 */}
-        <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
-          <div className="w-40 h-40 mb-4 rounded-full bg-gray-200 flex items-center justify-center">
-            <span className="text-gray-500">Image Placeholder</span>
+          {/* Placeholder Card 2 */}
+          <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
+            <div className="w-40 h-40 mb-4 rounded-full bg-gray-200 flex items-center justify-center">
+              <span className="text-gray-500">Image Placeholder</span>
+            </div>
+            <h3 className="text-xl font-bold text-center mb-2">
+              Business Growth
+            </h3>
+            <p className="text-sm text-center">
+              Helped businesses expand their reach and increase revenue through strategic solutions.
+            </p>
           </div>
-          <h3 className="text-xl font-bold text-center mb-2">
-            Business Growth
-          </h3>
-          <p className="text-sm text-center">
-            Helped businesses expand their reach and increase revenue through strategic solutions.
-          </p>
         </div>
-      </div>
-    </section>
-
+      </section>
       
       {/* Services / Projects */}
       <section id="services" className="py-16 px-8 bg-white">
@@ -183,6 +188,22 @@ export default function Home() {
           © {new Date().getFullYear()} Stand Out Solutions. All rights reserved.
         </p>
       </footer>
+
+      {/* Add CSS for the spinning animation */}
+      <style jsx global>{`
+        @keyframes spin-slow {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+        .animate-spin-slow {
+          animation: spin-slow 15s linear infinite;
+          transform-origin: center;
+        }
+      `}</style>
     </div>
   );
 }
