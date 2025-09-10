@@ -72,7 +72,11 @@ export default function Home() {
                       d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" 
                     />
                   </defs>
+                  
+                  {/* Background circle */}
                   <circle cx="100" cy="100" r="75" fill="#f8fafc" />
+
+                  {/* Center image */}
                   <image 
                     href="/calebjoefounders.png" 
                     x="50" 
@@ -80,15 +84,15 @@ export default function Home() {
                     width="100" 
                     height="100" 
                   />
-                  <text className="text-green-600 font-bold text-[16px]">
-                    <textPath 
-                      href="#circlePath" 
-                      startOffset="0%" 
-                      className="animate-spin-slow origin-center"
-                    >
-                      saved $300/year in hosting costs. • saved $300/year in hosting costs. •
-                    </textPath>
-                  </text>
+
+                  {/* Rotating text */}
+                  <g className="animate-spin-slow">
+                    <text className="fill-green-600 font-bold text-[16px]">
+                      <textPath href="#circlePath" startOffset="0%">
+                        saved $300/year in hosting costs. • saved $300/year in hosting costs. •
+                      </textPath>
+                    </text>
+                  </g>
                 </svg>
               </div>
             </div>
@@ -192,16 +196,12 @@ export default function Home() {
       {/* Add CSS for the spinning animation */}
       <style jsx global>{`
         @keyframes spin-slow {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
         }
         .animate-spin-slow {
           animation: spin-slow 15s linear infinite;
-          transform-origin: center;
+          transform-origin: 50% 50%;
         }
       `}</style>
     </div>
