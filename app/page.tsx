@@ -79,10 +79,10 @@ export default function Home() {
                   {/* Center image */}
                   <image 
                     href="/calebjoefounders.png" 
-                    x="50" 
-                    y="50" 
-                    width="200" 
-                    height="200" 
+                    x="-50" 
+                    y="-50" 
+                    width="300" 
+                    height="300" 
                   />
 
                   {/* Rotating text */}
