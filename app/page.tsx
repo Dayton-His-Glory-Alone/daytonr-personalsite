@@ -53,15 +53,18 @@ export default function Home() {
         </div>
       </section>
 
-
- <div className="min-h-screen bg-[#f7f3e9] text-gray-800">
+    <div className="min-h-screen bg-[#f7f3e9] text-gray-800">
       {/* Google Calendar Scheduling Button */}
       <link
         href="https://calendar.google.com/calendar/scheduling-button-script.css"
         rel="stylesheet"
       />
       <Script src="https://calendar.google.com/calendar/scheduling-button-script.js" />
-      <div id="calendar-button"></div>
+
+      {/* Centered container for the button */}
+      <div className="flex justify-center mt-10 mb-6">
+        <div id="calendar-button" className="scale-110"></div>
+      </div>
 
       <Script id="google-calendar-btn" strategy="afterInteractive">
         {`
@@ -70,7 +73,7 @@ export default function Home() {
               window.calendar.schedulingButton.load({
                 url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3oCD3WvYeVh1Vm7-ONpzN9zxpOfBC2UtfkL0jslYM4GclsH6r52G8SYYOYQZ8D8oMt1Aw6v0eO?gv=true',
                 color: '#039BE5',
-                label: "Book a Call",
+                label: "📅 Book a Call",
                 target: document.getElementById('calendar-button'),
               });
             }
@@ -78,9 +81,6 @@ export default function Home() {
         `}
       </Script>
     </div>
-
-
-
       {/* Blog Section */}
       <section className="text-center py-16 px-6">
         <h2 className="text-3xl font-semibold mb-8">Latest Thought</h2>
