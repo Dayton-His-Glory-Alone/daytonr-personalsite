@@ -10,6 +10,10 @@ export default function ServicesPage() {
           Whether youre a small business, a startup, or an established brand, I offer solutions that help you
           connect better, run smarter, and grow faster.
         </p>
+
+<p className="text-lg max-w-2xl mx-auto">
+   <b>satisfaction guaranteed</b> We build something you love/use or your money back.
+        </p>
       </header>
 
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto mb-20">
