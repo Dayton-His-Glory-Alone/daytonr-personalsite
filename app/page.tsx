@@ -39,11 +39,12 @@ export default function Home() {
   Help Your Business
   <br />
   <span className="inline-block perspective-1000">
+    Out 
     <span
       key={words[currentWordIndex]} // important so React re-triggers animation
       className="inline-block animate-flip text-[#039BE5]"
     >
-      <b>Out{words[currentWordIndex]}</b>
+      <b>{words[currentWordIndex]}</b>
     </span>
   </span>
   <br />
