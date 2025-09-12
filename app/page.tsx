@@ -43,7 +43,7 @@ export default function Home() {
       key={words[currentWordIndex]} // important so React re-triggers animation
       className="inline-block animate-flip text-[#039BE5]"
     >
-      {words[currentWordIndex]}
+      <b>Out{words[currentWordIndex]}</b>
     </span>
   </span>
   <br />
