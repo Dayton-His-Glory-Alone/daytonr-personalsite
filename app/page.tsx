@@ -133,7 +133,7 @@ export default function Home() {
 
 
           
-          {/* Card 2 */}
+          {/* Placeholder Card 1 */}
     <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
             <div className="relative w-40 h-40 mb-4">
               <div className="relative w-full h-full">
@@ -145,32 +145,23 @@ export default function Home() {
                     />
                   </defs>
                   
-<svg width="200" height="200" viewBox="0 0 200 200">
-  {/* Define the circular clip path */}
-  <defs>
-    <clipPath id="circleClip">
-      <circle cx="100" cy="100" r="75" />
-    </clipPath>
-  </defs>
+                  {/* Background circle */}
+                  <circle cx="100" cy="100" r="75" fill="#f8fafc" />
 
-  {/* Background circle */}
-  <circle cx="100" cy="100" r="75" fill="#f8fafc" />
-
-  {/* Center image clipped to circle */}
-  <image 
-    href="/moveit.png" 
-    x="0" 
-    y="0" 
-    width="200" 
-    height="200" 
-    clipPath="url(#circleClip)" 
+                  {/* Center image */}
+                  <image 
+                    href="/moveit.png" 
+                    x="0" 
+                    y="0" 
+                    width="200" 
+                    height="200" 
                   />
 
                   {/* Rotating text */}
                   <g className="animate-spin-slow">
-                    <text className="fill-green-600 font-bold text-[16px]">
+                    <text className="fill-white-600 font-bold text-[16px]">
                       <textPath href="#circlePath" startOffset="0%">
-                        saved $300/year in hosting costs.               •
+                        save $thousands in insurance costs               •
                       </textPath>
                     </text>
                   </g>
@@ -178,10 +169,10 @@ export default function Home() {
               </div>
             </div>
             <h3 className="text-xl font-bold text-center mb-2">
-              Project Success
+              Custom Employee Health App
             </h3>
             <p className="text-sm text-center">
-              Delivered exceptional results that significantly reduced operational costs while improving performance.
+              Delivered exceptional results that significantly reduced insurance costs while improving employee satisfaction.
             </p>
           </div>
 
