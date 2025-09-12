@@ -34,19 +34,26 @@ export default function Home() {
 
         {/* Hero Content */}
         <div className="relative z-10 px-6">
-          <h1 className="text-4xl font-bold mb-4">
-            Help Your Business{" "}
-            <span className="inline-block transition-all duration-500 ease-in-out">
-              <span className="text-[#039BE5]">Out</span>
-              <span className="text-white">{words[currentWordIndex]}</span>
-            </span>
-            <br />
-            with Strategic Marketing & Custom Software
-          </h1>
-          <p className="text-lg max-w-2xl mx-auto mb-6">
-            I help businesses like yours expand their digital footprint, automate
-            processes, and build meaningful connections with customers.
-          </p>
+          
+<h1 className="text-4xl font-bold mb-4">
+  Help Your Business
+  <br />
+  <span className="inline-block perspective-1000">
+    <span
+      key={words[currentWordIndex]} // important so React re-triggers animation
+      className="inline-block animate-flip text-[#039BE5]"
+    >
+      {words[currentWordIndex]}
+    </span>
+  </span>
+  <br />
+  with Strategic Marketing & Custom Software
+</h1>
+
+<p className="text-lg max-w-2xl mx-auto mb-6">
+  I help businesses like yours expand their digital footprint, automate
+  processes, and build meaningful connections with customers.
+</p>
 
           {/* Services button */}
           <Link
@@ -215,6 +222,32 @@ export default function Home() {
   .animate-spin-slow {
     animation: spin-slow 6s linear infinite alternate;
     transform-origin: 50% 50%;
+  }
+`}</style>
+        <style jsx>{`
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  .animate-flip {
+    display: inline-block;
+    animation: flip 0.6s ease-in-out;
+  }
+  @keyframes flip {
+    0% {
+      transform: rotateX(90deg);
+      opacity: 0;
+      color: #039be5;
+    }
+    50% {
+      transform: rotateX(0deg);
+      opacity: 1;
+      color: #0288d1;
+    }
+    100% {
+      transform: rotateX(0deg);
+      opacity: 1;
+      color: white;
+    }
   }
 `}</style>
     </div>
