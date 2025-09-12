@@ -4,12 +4,19 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 
 export default function Home() {
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const words = ["perform", "sell", "grow", "stand"];
+
   useEffect(() => {
-    // This ensures the animation works after hydration
-  }, []);
+    const interval = setInterval(() => {
+      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+    }, 1500); // Change word every 1.5 seconds
+
+    return () => clearInterval(interval);
+  }, [words.length]);
 
   return (
-    <div className="min-h-screen bg-[#f7f3e9] text-gray-800">
+      <div className="min-h-screen bg-[#f7f3e9] text-gray-800">
       {/* Hero Section */}
       <section className="relative w-full h-screen flex items-center justify-center text-center text-white overflow-hidden">
         {/* Background Video */}
@@ -28,7 +35,13 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-10 px-6">
           <h1 className="text-4xl font-bold mb-4">
-            Grow Your Business with Strategic Marketing & Custom Software
+            Help Your Business{" "}
+            <span className="inline-block transition-all duration-500 ease-in-out">
+              <span className="text-[#039BE5]">Out</span>
+              <span className="text-white">{words[currentWordIndex]}</span>
+            </span>
+            <br />
+            with Strategic Marketing & Custom Software
           </h1>
           <p className="text-lg max-w-2xl mx-auto mb-6">
             I help businesses like yours expand their digital footprint, automate
