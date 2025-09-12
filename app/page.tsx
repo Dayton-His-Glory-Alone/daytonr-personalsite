@@ -39,10 +39,15 @@ export default function Home() {
   Help Your Business
   <br />
   <span className="inline-block perspective-1000">
-    Out 
     <span
-      key={words[currentWordIndex]} // important so React re-triggers animation
-      className="inline-block animate-flip text-[#039BE5]"
+      key={words[currentWordIndex] + "-out"}
+      className="inline-block animate-flip text-[#039BE5] mr-1"
+    >
+      Out
+    </span>
+    <span
+      key={words[currentWordIndex]}
+      className="inline-block animate-flip text-white"
     >
       <b>{words[currentWordIndex]}</b>
     </span>
@@ -55,6 +60,7 @@ export default function Home() {
   I help businesses like yours expand their digital footprint, automate
   processes, and build meaningful connections with customers.
 </p>
+
 
           {/* Services button */}
           <Link
@@ -225,13 +231,13 @@ export default function Home() {
     transform-origin: 50% 50%;
   }
 `}</style>
-        <style jsx>{`
+<style jsx>{`
   .perspective-1000 {
     perspective: 1000px;
   }
   .animate-flip {
     display: inline-block;
-    animation: flip 0.6s ease-in-out;
+    animation: flip 0.7s ease-in-out;
   }
   @keyframes flip {
     0% {
