@@ -39,8 +39,8 @@ export default function ServicesPage() {
           {
             title: "Automation & Workflows",
             icon: "/icons/automation.png",
-            desc: "Streamline your operations with smart automations that save time and reduce manual work.",
-            price: "From $800"
+            desc: "From automating invoices to email! I will assess your business process and streamline your operations with smart automations that save time and reduce manual work.",
+            price: "From $100"
           },
           {
             title: "Content Creation",
