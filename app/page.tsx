@@ -89,12 +89,7 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {/* First Card with Rotating Text */}
-                    <a 
-  href="https://truckdriversbest.com" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="block"
->
+
           <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
             <div className="relative w-40 h-40 mb-4">
               <div className="relative w-full h-full">
@@ -136,16 +131,9 @@ export default function Home() {
               Converted site hosting and reduced operational costs while improving performance.
             </p>
           </div>
-</a>
-
           
           {/*  Card 2 */}
-          <a 
-  href="https://moveit.my.nussbaum.com" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="block"
->
+
     <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
             <div className="relative w-40 h-40 mb-4">
               <div className="relative w-full h-full">
@@ -187,7 +175,7 @@ export default function Home() {
               Delivered exceptional results that significantly reduced insurance costs while improving employee satisfaction.
             </p>
           </div>
-</a>
+
 
 
           {/*  Card 3 */}
@@ -240,12 +228,7 @@ export default function Home() {
   </div>
 </a>
  {/*  Card 4 */}
-<a 
-  href="https://myversevault.com" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="block"
->
+
   <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center cursor-pointer">
     <div className="relative w-40 h-40 mb-4">
       <div className="relative w-full h-full">
@@ -287,7 +270,7 @@ export default function Home() {
       Created a new way to memorize scripture and enjoy the process.
     </p>
   </div>
-</a>
+
 
           
       </section>
@@ -310,7 +293,7 @@ export default function Home() {
    <style jsx global>{`
   @keyframes spin-slow {
     from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    to { transform: rotate(100deg); }
   }
   .animate-spin-slow {
     animation: spin-slow 6s linear infinite alternate;
