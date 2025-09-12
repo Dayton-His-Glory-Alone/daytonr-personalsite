@@ -131,11 +131,13 @@ export default function Home() {
             </p>
           </div>
 
+
+          
           {/* Placeholder Card 1 */}
           <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
             <div className="w-40 h-40 mb-4 rounded-full bg-gray-200 flex items-center justify-center">
                       <image 
-                    href="/calebjoefounders.png" 
+                    href="/moveit.png" 
                     x="0" 
                     y="0" 
                     width="200" 
