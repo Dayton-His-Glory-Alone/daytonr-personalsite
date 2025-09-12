@@ -193,7 +193,51 @@ export default function Home() {
         </div>
       </section>
       
-     
+     <section id="services" className="py-16 px-8 bg-white">
+        <h2 className="text-3xl font-semibold text-center mb-12">
+          What I Offer
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+          {[
+            {
+              title: "Marketing Strategy",
+              desc: "Craft campaigns that resonate. Ill help define your voice, grow your audience, and drive results.",
+              icon: "/appicon3.png",
+              href: "https://www.nussbaum.com",
+            },
+            {
+              title: "Custom Software",
+              desc: "From apps to automation, I develop tailored software solutions that make your work easier and more powerful.",
+              icon: "/appicon.png",
+              href: "https://www.myversevault.com",
+            },
+            {
+              title: "Web Presence",
+              desc: "Make your website work for you. I design, build, and manage sites that convert and captivate.",
+              icon: "/appicon2.png",
+              href: "https://www.truckdriversbest.com",
+            },
+          ].map((service) => (
+            <a
+              key={service.title}
+              href={service.href}
+              className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300"
+            >
+              <Image
+                src={service.icon}
+                alt={service.title}
+                width={60}
+                height={60}
+                className="mb-4 mx-auto"
+              />
+              <h3 className="text-xl font-bold text-center mb-2">
+                {service.title}
+              </h3>
+              <p className="text-sm text-center">{service.desc}</p>
+            </a>
+          ))}
+        </div>
+      </section>
       
       {/* Footer */}
       <footer className="text-center py-10 px-6 bg-[#f0ede6]">
