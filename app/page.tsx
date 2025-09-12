@@ -136,15 +136,16 @@ export default function Home() {
           {/* Placeholder Card 1 */}
 <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
   <div className="w-40 h-40 mb-4 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
-    /moveit.png
-  </div>
-  <h3 className="text-xl font-bold text-center mb-2">
-    Client Achievement
-  </h3>
-  <p className="text-sm text-center">
-    Another successful project delivering value and innovation to our clients.
+    <Image
+      src="/moveit.png"
+      alt="Client Achievement"
+      width={160}
+      height={160}
+      className="rounded-full object-cover"
+     Another successful project delivering value and innovation to our clients.
   </p>
 </div>
+
 
 
           {/* Placeholder Card 2 */}
