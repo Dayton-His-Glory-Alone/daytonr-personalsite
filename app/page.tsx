@@ -179,18 +179,47 @@ export default function Home() {
 
 
           {/* Placeholder Card 2 */}
-          <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
-            <div className="w-40 h-40 mb-4 rounded-full bg-gray-200 flex items-center justify-center">
-              <span className="text-gray-500">Image Placeholder</span>
+    <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
+            <div className="relative w-40 h-40 mb-4">
+              <div className="relative w-full h-full">
+                <svg className="w-full h-full" viewBox="0 0 200 200">
+                  <defs>
+                    <path 
+                      id="circlePath" 
+                      d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" 
+                    />
+                  </defs>
+                  
+                  {/* Background circle */}
+                  <circle cx="100" cy="100" r="75" fill="#f8fafc" />
+
+                  {/* Center image */}
+                  <image 
+                    href="/cleaners.png" 
+                    x="0" 
+                    y="0" 
+                    width="200" 
+                    height="200" 
+                  />
+
+                  {/* Rotating text */}
+                  <g className="animate-spin-slow">
+                    <text className="fill-white-600 font-bold text-[16px]">
+                      <textPath href="#circlePath" startOffset="0%">
+                        saved thousands in insurance costs               •
+                      </textPath>
+                    </text>
+                  </g>
+                </svg>
+              </div>
             </div>
             <h3 className="text-xl font-bold text-center mb-2">
-              Business Growth
+              Client Communication App for Commercial Cleaners
             </h3>
             <p className="text-sm text-center">
-              Helped businesses expand their reach and increase revenue through strategic solutions.
+              Increased leads and revenue.
             </p>
           </div>
-        </div>
       </section>
       
      <section id="services" className="py-16 px-8 bg-white">
