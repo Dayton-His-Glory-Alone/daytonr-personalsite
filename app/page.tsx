@@ -160,7 +160,7 @@ export default function Home() {
 
           {/* Third Card */}
           <a
-            href="https://test.com"
+            href="https://squeakycleancommunication.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center"
