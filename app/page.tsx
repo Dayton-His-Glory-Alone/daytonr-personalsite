@@ -179,54 +179,7 @@ export default function Home() {
 
 
           {/*  Card 3 */}
-<a 
-  href="https://test.com" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="block"
->
-  <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center cursor-pointer">
-    <div className="relative w-40 h-40 mb-4">
-      <div className="relative w-full h-full">
-        <svg className="w-full h-full" viewBox="0 0 200 200">
-          <defs>
-            <path 
-              id="circlePath" 
-              d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" 
-            />
-          </defs>
-          
-          {/* Background circle */}
-          <circle cx="100" cy="100" r="75" fill="#f8fafc" />
-
-          {/* Center image */}
-          <image 
-            href="/cleaners.png" 
-            x="0" 
-            y="0" 
-            width="200" 
-            height="200" 
-          />
-
-          {/* Rotating text */}
-          <g className="animate-spin-slow">
-            <text className="fill-white-200 font-bold text-[16px]">
-              <textPath href="#circlePath" startOffset="0%">
-                increased leads and revenue •
-              </textPath>
-            </text>
-          </g>
-        </svg>
-      </div>
-    </div>
-    <h3 className="text-xl font-bold text-center mb-2">
-      Client Communication App For Commercial Cleaners
-    </h3>
-    <p className="text-sm text-center">
-      Helped businesses expand their reach and increase revenue through strategic solutions.
-    </p>
-  </div>
-</a>
+<div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center"> <div className="relative w-40 h-40 mb-4"> <div className="relative w-full h-full"> <svg className="w-full h-full" viewBox="0 0 200 200"> <defs> <path id="circlePath" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" /> </defs> {/* Background circle */} <circle cx="100" cy="100" r="75" fill="#f8fafc" /> {/* Center image */} <image href="/cleaners.png" x="0" y="0" width="200" height="200" /> {/* Rotating text */} <g className="animate-spin-slow"> <text className="fill-white-200 font-bold text-[16px]"> <textPath href="#circlePath" startOffset="0%"> increased leads and revenue • </textPath> </text> </g> </svg> </div> </div> <h3 className="text-xl font-bold text-center mb-2"> Client Communication App For Commercial Cleaners </h3> <p className="text-sm text-center"> Helped businesses expand their reach and increase revenue through strategic solutions. </p> </div>
  {/*  Card 4 */}
 
   <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center cursor-pointer">
