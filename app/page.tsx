@@ -133,7 +133,7 @@ export default function Home() {
 
 
           
-          {/* Placeholder Card 1 */}
+          {/* Card 2 */}
     <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
             <div className="relative w-40 h-40 mb-4">
               <div className="relative w-full h-full">
@@ -145,16 +145,25 @@ export default function Home() {
                     />
                   </defs>
                   
-                  {/* Background circle */}
-                  <circle cx="100" cy="100" r="75" fill="#f8fafc" />
+<svg width="200" height="200" viewBox="0 0 200 200">
+  {/* Define the circular clip path */}
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="100" cy="100" r="75" />
+    </clipPath>
+  </defs>
 
-                  {/* Center image */}
-                  <image 
-                    href="/moveit.png" 
-                    x="0" 
-                    y="0" 
-                    width="200" 
-                    height="200" 
+  {/* Background circle */}
+  <circle cx="100" cy="100" r="75" fill="#f8fafc" />
+
+  {/* Center image clipped to circle */}
+  <image 
+    href="/moveit.png" 
+    x="0" 
+    y="0" 
+    width="200" 
+    height="200" 
+    clipPath="url(#circleClip)" 
                   />
 
                   {/* Rotating text */}
