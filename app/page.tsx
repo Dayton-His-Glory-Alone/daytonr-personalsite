@@ -89,7 +89,6 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {/* First Card with Rotating Text */}
-
           <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
             <div className="relative w-40 h-40 mb-4">
               <div className="relative w-full h-full">
@@ -131,9 +130,10 @@ export default function Home() {
               Converted site hosting and reduced operational costs while improving performance.
             </p>
           </div>
-          
-          {/*  Card 2 */}
 
+
+          
+          {/* Placeholder Card 1 */}
     <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
             <div className="relative w-40 h-40 mb-4">
               <div className="relative w-full h-full">
@@ -161,7 +161,7 @@ export default function Home() {
                   <g className="animate-spin-slow">
                     <text className="fill-white-600 font-bold text-[16px]">
                       <textPath href="#circlePath" startOffset="0%">
-                        save thousands in insurance costs               •
+                        saved thousands in insurance costs               •
                       </textPath>
                     </text>
                   </g>
@@ -178,54 +178,97 @@ export default function Home() {
 
 
 
-          {/*  Card 3 */}
-<div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center"> <div className="relative w-40 h-40 mb-4"> <div className="relative w-full h-full"> <svg className="w-full h-full" viewBox="0 0 200 200"> <defs> <path id="circlePath" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" /> </defs> {/* Background circle */} <circle cx="100" cy="100" r="75" fill="#f8fafc" /> {/* Center image */} <image href="/cleaners.png" x="0" y="0" width="200" height="200" /> {/* Rotating text */} <g className="animate-spin-slow"> <text className="fill-white-200 font-bold text-[16px]"> <textPath href="#circlePath" startOffset="0%"> increased leads and revenue • </textPath> </text> </g> </svg> </div> </div> <h3 className="text-xl font-bold text-center mb-2"> Client Communication App For Commercial Cleaners </h3> <p className="text-sm text-center"> Helped businesses expand their reach and increase revenue through strategic solutions. </p> </div>
- {/*  Card 4 */}
+          {/* Placeholder Card 2 */}
+    <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center">
+            <div className="relative w-40 h-40 mb-4">
+              <div className="relative w-full h-full">
+                <svg className="w-full h-full" viewBox="0 0 200 200">
+                  <defs>
+                    <path 
+                      id="circlePath" 
+                      d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" 
+                    />
+                  </defs>
+                  
+                  {/* Background circle */}
+                  <circle cx="100" cy="100" r="75" fill="#f8fafc" />
 
-  <div className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center cursor-pointer">
-    <div className="relative w-40 h-40 mb-4">
-      <div className="relative w-full h-full">
-        <svg className="w-full h-full" viewBox="0 0 200 200">
-          <defs>
-            <path 
-              id="circlePath" 
-              d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" 
-            />
-          </defs>
-          
-          {/* Background circle */}
-          <circle cx="100" cy="100" r="75" fill="#f8fafc" />
+                  {/* Center image */}
+                  <image 
+                    href="/cleaners.png" 
+                    x="0" 
+                    y="0" 
+                    width="200" 
+                    height="200" 
+                  />
 
-          {/* Center image */}
-          <image 
-            href="/appicon.png" 
-            x="0" 
-            y="0" 
-            width="200" 
-            height="200" 
-          />
-
-          {/* Rotating text */}
-          <g className="animate-spin-slow">
-            <text className="fill-white-200 font-bold text-[16px]">
-              <textPath href="#circlePath" startOffset="0%">
-                app design • fun elements • app design • fun elements
-              </textPath>
-            </text>
-          </g>
-        </svg>
-      </div>
-    </div>
-    <h3 className="text-xl font-bold text-center mb-2">
-      Scripture Memorization Mobile App
-    </h3>
-    <p className="text-sm text-center">
-      Created a new way to memorize scripture and enjoy the process.
-    </p>
-  </div>
-
+                  {/* Rotating text */}
+                  <g className="animate-spin-slow">
+                    <text className="fill-white-600 font-bold text-[16px]">
+                      <textPath href="#circlePath" startOffset="0%">
+                       increased leads and revenue              •
+                      </textPath>
+                    </text>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <h3 className="text-xl font-bold text-center mb-2">
+              Client communication app for commercial cleaners
+            </h3>
+            <p className="text-sm text-center">
+              Helped businesses expand their reach and increase revenue through strategic solutions.
+            </p>
+          </div>
 
           
+      </section>
+      
+      {/* Services / Projects */}
+      <section id="services" className="py-16 px-8 bg-white">
+        <h2 className="text-3xl font-semibold text-center mb-12">
+          What I Offer
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+          {[
+            {
+              title: "Marketing Strategy",
+              desc: "Craft campaigns that resonate. Ill help define your voice, grow your audience, and drive results.",
+              icon: "/appicon3.png",
+              href: "https://www.nussbaum.com",
+            },
+            {
+              title: "Custom Software",
+              desc: "From apps to automation, I develop tailored software solutions that make your work easier and more powerful.",
+              icon: "/appicon.png",
+              href: "https://www.myversevault.com",
+            },
+            {
+              title: "Web Presence",
+              desc: "Make your website work for you. I design, build, and manage sites that convert and captivate.",
+              icon: "/appicon2.png",
+              href: "https://www.truckdriversbest.com",
+            },
+          ].map((service) => (
+            <a
+              key={service.title}
+              href={service.href}
+              className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300"
+            >
+              <Image
+                src={service.icon}
+                alt={service.title}
+                width={60}
+                height={60}
+                className="mb-4 mx-auto"
+              />
+              <h3 className="text-xl font-bold text-center mb-2">
+                {service.title}
+              </h3>
+              <p className="text-sm text-center">{service.desc}</p>
+            </a>
+          ))}
+        </div>
       </section>
       
       {/* Footer */}
