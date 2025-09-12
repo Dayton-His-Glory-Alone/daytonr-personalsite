@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Stand Out: Mobile App Creation, Film, Website",
+  title: "Stand Out: App, Film, Website Creation",
   description: "Standout Solutions",
 };
 
