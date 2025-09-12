@@ -141,7 +141,7 @@ export default function Home() {
       alt="Client Achievement"
       width={160}
       height={160}
-      className="rounded-full object-cover"
+      className="rounded-full object-cover"></Image>
      Another successful project delivering value and innovation to our clients.
   </p>
 </div>
