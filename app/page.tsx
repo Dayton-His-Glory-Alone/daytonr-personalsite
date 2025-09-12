@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 
 export default function Home() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const words = ["perform", "sell", "grow", "stand"];
+  const words = ["perform", "shine","sell","pace", "grow", "stand"];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -36,7 +36,7 @@ export default function Home() {
         <div className="relative z-10 px-6">
           
 <h1 className="text-4xl font-bold mb-4">
-  Help Your Business
+  Empower Your Business To
   <br />
   <span className="inline-block perspective-1000">
     <span
