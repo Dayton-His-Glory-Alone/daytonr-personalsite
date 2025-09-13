@@ -10,14 +10,13 @@ export default function Home() {
     const interval = setInterval(() => {
       setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
     }, 1500);
-
     return () => clearInterval(interval);
   }, [words.length]);
 
   return (
     <div className="min-h-screen bg-[#f7f3e9] text-gray-800">
       {/* Hero Section */}
-      <section className="relative w-full h-screen flex items-center justify-center text-center text-white overflow-hidden">
+      <section className="relative w-full h-screen flex flex-col items-center justify-center text-center text-white overflow-hidden">
         {/* Background Video */}
         <video
           autoPlay
@@ -28,11 +27,12 @@ export default function Home() {
           <source src="/videoplayback.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+
         {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
         {/* Hero Content */}
-        <div className="relative z-10 px-6">
+        <div className="relative z-10 px-6 max-w-3xl">
           <h1 className="text-4xl font-bold mb-4">
             Empower Your Business To
             <br />
@@ -54,28 +54,45 @@ export default function Home() {
             with Strategic Marketing & Custom Software
           </h1>
 
+          {/* Refined Subheadline */}
           <p className="text-lg max-w-2xl mx-auto mb-6">
-            I help businesses like yours expand their digital footprint, automate
-            processes, and build meaningful connections with customers.
+            Grow your digital presence, streamline operations, and create 
+            lasting customer relationships with solutions built for your business.
           </p>
 
-          {/* Services button */}
-          <Link
-            href="services"
-            className="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition"
-          >
-            See What I Can Do for You
-          </Link>
-          <br />
-          {/* Appointment button */}
+          {/* Primary CTA */}
           <a
             href="https://calendar.app.google/9QHdAtmbYtDjjcDM9"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-4 bg-[#039BE5] text-white px-6 py-3 rounded-lg hover:bg-[#0288d1] transition"
+            className="inline-block bg-[#039BE5] text-white px-8 py-4 rounded-lg hover:bg-[#0288d1] transition text-lg font-semibold mb-4"
           >
             Book an Appointment
           </a>
+          <br />
+
+          {/* Secondary CTA */}
+          <Link
+            href="services"
+            className="inline-block border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition"
+          >
+            See What I Can Do for You
+          </Link>
+
+          {/* Trust Building Logos */}
+          <div className="mt-10 flex justify-center items-center gap-6">
+            {[1,2,3,4].map((i) => (
+              <img
+                key={i}
+                src="/calebjoefounders.png"
+                alt="Trusted partner"
+                className="h-12 w-auto opacity-80 hover:opacity-100 transition"
+              />
+            ))}
+          </div>
+          <p className="text-sm text-gray-300 mt-3">
+            Trusted by growing businesses to deliver results
+          </p>
         </div>
       </section>
 
@@ -94,25 +111,23 @@ export default function Home() {
             className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center"
           >
             <div className="relative w-40 h-40 mb-4">
-              <div className="relative w-full h-full">
-                <svg className="w-full h-full" viewBox="0 0 200 200">
-                  <defs>
-                    <path 
-                      id="circlePath" 
-                      d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" 
-                    />
-                  </defs>
-                  <circle cx="100" cy="100" r="75" fill="#f8fafc" />
-                  <image href="/calebjoefounders.png" x="0" y="0" width="200" height="200" />
-                  <g className="animate-spin-slow">
-                    <text className="fill-green-600 font-bold text-[16px]">
-                      <textPath href="#circlePath" startOffset="0%">
-                        saved $300/year in hosting costs. •
-                      </textPath>
-                    </text>
-                  </g>
-                </svg>
-              </div>
+              <svg className="w-full h-full" viewBox="0 0 200 200">
+                <defs>
+                  <path 
+                    id="circlePath" 
+                    d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" 
+                  />
+                </defs>
+                <circle cx="100" cy="100" r="75" fill="#f8fafc" />
+                <image href="/calebjoefounders.png" x="0" y="0" width="200" height="200" />
+                <g className="animate-spin-slow">
+                  <text className="fill-green-600 font-bold text-[16px]">
+                    <textPath href="#circlePath" startOffset="0%">
+                      saved $300/year in hosting costs. •
+                    </textPath>
+                  </text>
+                </g>
+              </svg>
             </div>
             <h3 className="text-xl font-bold text-center mb-2">
               Website conversion for truck drivers best
@@ -130,25 +145,23 @@ export default function Home() {
             className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center"
           >
             <div className="relative w-40 h-40 mb-4">
-              <div className="relative w-full h-full">
-                <svg className="w-full h-full" viewBox="0 0 200 200">
-                  <defs>
-                    <path 
-                      id="circlePath2" 
-                      d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" 
-                    />
-                  </defs>
-                  <circle cx="100" cy="100" r="75" fill="#f8fafc" />
-                  <image href="/moveit.png" x="0" y="0" width="200" height="200" />
-                  <g className="animate-spin-slow">
-                    <text className="fill-white-600 font-bold text-[16px]">
-                      <textPath href="#circlePath2" startOffset="0%">
-                        saved thousands in insurance costs •
-                      </textPath>
-                    </text>
-                  </g>
-                </svg>
-              </div>
+              <svg className="w-full h-full" viewBox="0 0 200 200">
+                <defs>
+                  <path 
+                    id="circlePath2" 
+                    d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" 
+                  />
+                </defs>
+                <circle cx="100" cy="100" r="75" fill="#f8fafc" />
+                <image href="/moveit.png" x="10" y="10" width="180" height="180" />
+                <g className="animate-spin-slow">
+                  <text className="fill-white-600 font-bold text-[16px]">
+                    <textPath href="#circlePath2" startOffset="0%">
+                      saved thousands in insurance costs •
+                    </textPath>
+                  </text>
+                </g>
+              </svg>
             </div>
             <h3 className="text-xl font-bold text-center mb-2">
               Custom Employee Health App
@@ -166,25 +179,24 @@ export default function Home() {
             className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center"
           >
             <div className="relative w-40 h-40 mb-4">
-              <div className="relative w-full h-full">
-                <svg className="w-full h-full" viewBox="0 0 200 200">
-                  <defs>
-                    <path 
-                      id="circlePath3" 
-                      d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" 
-                    />
-                  </defs>
-                  <circle cx="100" cy="100" r="75" fill="#f8fafc" />
-                  <image href="/cleaners.png" x="0" y="0" width="200" height="200" />
-                  <g className="animate-spin-slow">
-                    <text className="fill-blue-600 font-bold text-[16px]">
-                      <textPath href="#circlePath3" startOffset="0%">
-                        streamlined client communication •
-                      </textPath>
-                    </text>
-                  </g>
-                </svg>
-              </div>
+              <svg className="w-full h-full" viewBox="0 0 200 200">
+                <defs>
+                  <path 
+                    id="circlePath3" 
+                    d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" 
+                  />
+                </defs>
+                <circle cx="100" cy="100" r="75" fill="#f8fafc" />
+                {/* Cleaners image smaller */}
+                <image href="/cleaners.png" x="20" y="20" width="160" height="160" />
+                <g className="animate-spin-slow">
+                  <text className="fill-blue-600 font-bold text-[16px]">
+                    <textPath href="#circlePath3" startOffset="0%">
+                      streamlined client communication •
+                    </textPath>
+                  </text>
+                </g>
+              </svg>
             </div>
             <h3 className="text-xl font-bold text-center mb-2">
               Commercial Cleaners App
@@ -195,7 +207,7 @@ export default function Home() {
           </a>
         </div>
       </section>
-      
+
       {/* Footer */}
       <footer className="text-center py-10 px-6 bg-[#f0ede6]">
         <p className="text-sm">Ready to take your brand further?</p>
