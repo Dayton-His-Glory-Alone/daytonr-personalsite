@@ -78,22 +78,7 @@ export default function Home() {
           >
             See What I Can Do for You
           </Link>
-
-          {/* Trust Building Logos */}
-          <div className="mt-10 flex justify-center items-center gap-6">
-            {[1,2,3,4].map((i) => (
-              <img
-                key={i}
-                src="/calebjoefounders.png"
-                alt="Trusted partner"
-                className="h-12 w-auto opacity-80 hover:opacity-100 transition"
-              />
-            ))}
-          </div>
-          <p className="text-sm text-gray-300 mt-3">
-            Trusted by growing businesses to deliver results
-          </p>
-        </div>
+   
       </section>
 
       {/* What We've Done Section */}
