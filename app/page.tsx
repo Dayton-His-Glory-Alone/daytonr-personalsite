@@ -60,22 +60,26 @@ export default function Home() {
           </p>
 
           {/* Services button */}
-          <Link
-            href="services"
-            className="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition"
-          >
-            See What I Can Do for You
-          </Link>
-          <br />
-          {/* Appointment button */}
-          <a
-            href="https://calendar.app.google/9QHdAtmbYtDjjcDM9"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block mt-4 bg-[#039BE5] text-white px-6 py-3 rounded-lg hover:bg-[#0288d1] transition"
-          >
-            Book an Appointment
-          </a>
+          {/* Appointment button (Primary CTA) */}
+<a
+  href="https://calendar.app.google/9QHdAtmbYtDjjcDM9"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block bg-[#039BE5] text-white px-8 py-4 rounded-lg shadow-lg hover:bg-[#0288d1] transition font-semibold text-lg"
+>
+  Book a Call
+</a>
+
+<br />
+
+{/* Services button (Secondary CTA) */}
+<Link
+  href="services"
+  className="inline-block mt-4 border-2 border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition"
+>
+  See What I Can Do for You
+</Link>
+
         </div>
       </section>
 
