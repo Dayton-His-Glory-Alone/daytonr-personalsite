@@ -118,7 +118,7 @@ export default function Home() {
               Website conversion for truck drivers best
             </h3>
             <p className="text-sm text-center">
-              Delivered exceptional results that significantly reduced operational costs while improving performance.
+             Converted site hosting, reducing operational costs while improving performance.
             </p>
           </a>
 
