@@ -128,7 +128,7 @@ export default function Home() {
 
           {/* Second Card */}
           <a
-            href="https://move.my.nussbaum.com"
+            href="https://moveit.my.nussbaum.com"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#fffbe6] p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center"
