@@ -40,13 +40,13 @@ export default function ServicesPage() {
       <header className="text-center mb-16">
         <h1 className="text-4xl font-bold mb-4">How I Help You Grow</h1>
         <p className="text-lg max-w-2xl mx-auto">
-          Whether youre a small business, a startup, or an established brand, I
+          Whether you are a small business, a startup, or an established brand, I
           offer solutions that help you connect better, run smarter, and grow
           faster.
         </p>
 
         <p className="text-lg max-w-2xl mx-auto">
-          <b>satisfaction guaranteed</b> We build something you love/use or your
+          <b>Satisfaction guaranteed!</b> We build something you love/use or your
           money back.
         </p>
       </header>
