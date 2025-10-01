@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react"; 
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const words = ["perform", "shine","sell","pace", "grow", "stand"];
 
@@ -15,6 +16,42 @@ export default function Home() {
   }, [words.length]);
 
   return (
+
+      {/* Header Section */}
+      <header className="p-4 bg-gray-100 flex justify-between items-center">
+        <h1 className="text-xl font-bold">Lets Outstand</h1>
+
+        {/* Hamburger Menu */}
+        <div className="relative">
+          {/* Hamburger Icon */}
+          <button
+            className="p-2 text-gray-700 rounded-md focus:outline-none"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <div className="space-y-1">
+              <span className="block w-6 h-0.5 bg-gray-700"></span>
+              <span className="block w-6 h-0.5 bg-gray-700"></span>
+              <span className="block w-6 h-0.5 bg-gray-700"></span>
+            </div>
+          </button>
+
+          {/* Dropdown Menu */}
+          {isOpen && (
+            <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md">
+              <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                Home
+              </a>
+              <a href="/Resources" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                Resources
+              </a>
+              <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                Contact
+              </a>
+            </div>
+          )}
+        </div>
+      </header>
+          
     <div className="min-h-screen bg-[#f7f3e9] text-gray-800">
       {/* Hero Section */}
       <section className="relative w-full h-screen flex items-center justify-center text-center text-white overflow-hidden">
