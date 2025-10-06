@@ -3,7 +3,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
-// You can add more articles here later
+// Article library (easily expandable)
 const articles: Record<
   string,
   { title: string; content: string }
@@ -92,6 +92,100 @@ Many businesses save **$2,000–$10,000+ annually** just from the first few item
 If you'd like assistance implementing any of these solutions or creating custom apps to streamline your operations, let's discuss how we can optimize your business together.
     `,
   },
+
+  // 🧠 New Article Example
+  "top-10-automation-tools": {
+    title: "Top 10 Automation Tools for Small Businesses",
+    content: `
+### Work Smarter, Not Harder — Simplify, Automate, and Scale
+
+Automation isn't just for big corporations. Small businesses can save dozens of hours per week (and thousands per year) by automating routine tasks. Here are 10 tools that deliver massive efficiency without breaking the bank.
+
+---
+
+## 1. **Zapier**
+Connects over 5,000 apps to automate repetitive workflows.  
+Example: Automatically send new website leads to your CRM and Slack.
+
+💡 *Best for:* Connecting tools that don’t normally integrate.
+
+---
+
+## 2. **Trello + Butler**
+Use Trello’s built-in Butler automation to auto-assign tasks, move cards, or send reminders.
+
+💡 *Best for:* Project management and task automation.
+
+---
+
+## 3. **HubSpot CRM**
+Automate email follow-ups, lead scoring, and deal tracking in one platform.
+
+💡 *Best for:* Sales and marketing teams looking to save time.
+
+---
+
+## 4. **Calendly**
+Removes back-and-forth scheduling with automatic booking links and integrations with Google or Outlook.
+
+💡 *Best for:* Service providers and client meetings.
+
+---
+
+## 5. **Mailchimp**
+Automates onboarding, newsletter sequences, and customer re-engagement.
+
+💡 *Best for:* Email marketing automation.
+
+---
+
+## 6. **QuickBooks Online**
+Automatically categorizes transactions, sends invoices, and reminds clients to pay.
+
+💡 *Best for:* Financial automation.
+
+---
+
+## 7. **Slack Workflow Builder**
+Automates common communication tasks like welcoming new members or collecting daily updates.
+
+💡 *Best for:* Team communication and updates.
+
+---
+
+## 8. **Google Workspace + App Script**
+Use Google Sheets + Gmail + Apps Script to automate custom workflows (like sending invoices or weekly summaries).
+
+💡 *Best for:* Custom internal automations.
+
+---
+
+## 9. **Airtable Automations**
+Combines database power with automation triggers and email or Slack actions.
+
+💡 *Best for:* Organizing projects or inventory.
+
+---
+
+## 10. **Make (formerly Integromat)**
+Visual automation builder with deep integrations and more flexibility than Zapier for complex logic.
+
+💡 *Best for:* Advanced users who want granular automation control.
+
+---
+
+### 🚀 Bonus Tip:
+Start with **one process** (like onboarding or billing), automate it fully, then expand.  
+Small wins add up fast.
+
+---
+
+### Want Help Automating Your Business?
+
+Our team builds **custom automation solutions** to reduce manual work, streamline communication, and improve accuracy.  
+Reach out today to see what’s possible for your workflow!
+    `,
+  },
 };
 
 export default function ArticlePage({ params }: { params: { slug: string } }) {
@@ -106,7 +200,9 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
         </h1>
         <div
           className="prose prose-lg text-gray-700 max-w-none"
-          dangerouslySetInnerHTML={{ __html: article.content.replace(/\n/g, "<br/>") }}
+          dangerouslySetInnerHTML={{
+            __html: article.content.replace(/\n/g, "<br/>"),
+          }}
         />
         <div className="mt-10 text-center">
           <Link
