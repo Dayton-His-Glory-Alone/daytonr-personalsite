@@ -82,9 +82,10 @@ const articles: Record<string, Article> = {
     date: "October 2025",
     image: "/images/automation-tools.jpg",
     content: [
-      "Automation can help you reclaim hours of time and reduce errors in day-to-day operations. Here are 10 powerful tools worth checking out:",
+      "Are you stuck doing the same tasks over and over again?",
+      "Automation can help you reclaim hours of time in day-to-day operations. Here are 10 powerful tools worth checking out:",
       "1️⃣ **Zapier** – Connects thousands of apps for no-code automation.",
-      "2️⃣ **Make (Integromat)** – A visual workflow builder for more complex automations.",
+      "2️⃣ **Power Automate** – Native to Microsoft and connects lots of your data into one place.",
       "3️⃣ **ClickUp** – Manage tasks, projects, and automation triggers in one place.",
       "4️⃣ **HubSpot** – Marketing, sales, and service automation built in.",
       "5️⃣ **ActiveCampaign** – Email and customer journey automation for growing lists.",
