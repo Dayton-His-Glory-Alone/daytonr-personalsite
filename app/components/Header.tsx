@@ -9,7 +9,7 @@ export default function Header() {
   return (
    <header className="p-4 bg-white/30 backdrop-blur-md flex justify-between items-center fixed top-0 left-0 w-full z-50">
       {/* Logo / Brand */}
-      <h1 className="text-xl font-bold">Let's Outstand</h1>
+      <h1 className="text-xl font-bold"></h1>
 
       {/* Hamburger Menu */}
       <div className="relative">
