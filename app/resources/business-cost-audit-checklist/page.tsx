@@ -9,7 +9,7 @@ export default function BusinessCostAuditChecklist() {
       {/* Hero Section */}
       <section className="relative w-full max-w-4xl rounded-2xl overflow-hidden shadow-md mb-12">
         <Image
-          src="/business-cost.png"
+          src="images/business-cost.png"
           alt="Business cost audit checklist"
           width={1200}
           height={600}
@@ -26,7 +26,7 @@ export default function BusinessCostAuditChecklist() {
       {/* Article Content */}
       <article className="prose prose-lg lg:prose-xl max-w-3xl prose-headings:font-semibold prose-h2:mt-10 prose-h2:text-gray-800 prose-p:text-gray-700 prose-li:text-gray-700 leading-relaxed">
         <p className="text-lg text-gray-600">
-          Running a business means juggling a thousand moving parts — and costs
+          Running a business means juggling a thousand moving parts and costs
           can creep up in unexpected places. A business cost audit helps you
           identify inefficiencies, eliminate waste, and unlock more profit.
         </p>
@@ -105,7 +105,7 @@ export default function BusinessCostAuditChecklist() {
 
       {/* Footer */}
       <p className="text-sm text-gray-500 text-center">
-        Written by <span className="font-semibold">The Nussbaum Team</span> · Last updated October 2025
+        Written by <span className="font-semibold">The Stand Out Team</span> · Last updated October 2025
       </p>
     </main>
   );
