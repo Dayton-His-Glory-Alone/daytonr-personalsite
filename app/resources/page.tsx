@@ -103,7 +103,7 @@ export default function ResourcesPage() {
           automate, streamline, and scale smarter.
         </p>
         <Link
-          href="/contact"
+          href="mailto:dayton@letsoutstand.com"
           className="inline-block bg-[#b23b25] text-white px-6 py-3 rounded-full font-medium hover:bg-[#7e291a] transition-colors"
         >
           Get in Touch
