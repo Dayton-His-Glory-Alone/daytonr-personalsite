@@ -11,15 +11,19 @@ export default function ResourcesPage() {
         "Discover hidden savings and revenue opportunities across technology, HR, marketing, and operations. This checklist guides you step-by-step to reduce waste and increase efficiency.",
       slug: "business-cost-audit-checklist",
       categories: [
-        "Technology & Software",
-        "Employee & HR",
-        "Customer Acquisition",
-        "Operations & Efficiency",
-        "Revenue Enhancement",
-        "Quick Wins",
+        "Business Strategy",
+        "Operations",
+        "Finance",
+        "Optimization",
       ],
     },
-    // Add more articles below as your library grows
+    {
+      title: "Top 10 Automation Tools for Small Businesses",
+      summary:
+        "Save hours each week with these proven automation tools that help streamline communication, reduce manual work, and scale your small business efficiently.",
+      slug: "top-10-automation-tools",
+      categories: ["Technology", "Automation", "Productivity"],
+    },
   ];
 
   return (
@@ -40,8 +44,8 @@ export default function ResourcesPage() {
           transition={{ delay: 0.3 }}
           className="text-lg text-gray-600 max-w-2xl mx-auto"
         >
-          Explore guides, tools, and strategies to optimize costs, improve
-          efficiency, and grow your organization.
+          Explore practical guides, checklists, and tools to optimize costs,
+          automate workflows, and grow your organization sustainably.
         </motion.p>
       </header>
 
@@ -59,7 +63,9 @@ export default function ResourcesPage() {
               <h2 className="text-2xl font-semibold mb-3 text-[#b23b25]">
                 {article.title}
               </h2>
-              <p className="text-gray-700 mb-4">{article.summary}</p>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                {article.summary}
+              </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {article.categories.map((cat, j) => (
                   <span
@@ -89,12 +95,12 @@ export default function ResourcesPage() {
         className="text-center mt-24 bg-[#f0e7d6] py-12 rounded-2xl max-w-4xl mx-auto shadow-inner"
       >
         <h2 className="text-2xl font-semibold text-[#b23b25] mb-4">
-          Ready to implement these changes?
+          Ready to optimize your business?
         </h2>
         <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-          Many businesses save <strong>$2,000–$10,000+</strong> annually from
-          just the first few items on this checklist. Let’s discuss how we can
-          optimize your business together.
+          Many organizations start saving time and money immediately after
+          applying just a few of these strategies. Let’s explore how you can
+          automate, streamline, and scale smarter.
         </p>
         <Link
           href="/contact"
