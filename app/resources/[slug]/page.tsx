@@ -1,17 +1,22 @@
-// app/resources/[slug]/page.tsx
+"use client";
+
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import ReactMarkdown from "react-markdown";
 
 interface Article {
   title: string;
   date: string;
   content: string[];
+  image?: string;
 }
 
 const articles: Record<string, Article> = {
   "business-cost-audit-checklist": {
     title: "Business Cost Audit Checklist",
     date: "October 2025",
+    image: "/images/business-cost.png", // 🖼️ add an image to /public/images
     content: [
       "### Discover Hidden Savings & Revenue Opportunities in Your Business",
       "---",
@@ -75,6 +80,7 @@ const articles: Record<string, Article> = {
   "top-10-automation-tools": {
     title: "Top 10 Automation Tools for Small Businesses",
     date: "October 2025",
+    image: "/images/automation-tools.jpg",
     content: [
       "Automation can help you reclaim hours of time and reduce errors in day-to-day operations. Here are 10 powerful tools worth checking out:",
       "1️⃣ **Zapier** – Connects thousands of apps for no-code automation.",
@@ -92,12 +98,10 @@ const articles: Record<string, Article> = {
   },
 };
 
-// ✅ Correctly type params for App Router
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
-// ✅ Use async/await to unwrap params
 export default async function ArticlePage({ params }: PageProps) {
   const { slug } = await params;
   const article = articles[slug];
@@ -117,21 +121,41 @@ export default async function ArticlePage({ params }: PageProps) {
   }
 
   return (
-    <main className="max-w-3xl mx-auto py-20 px-6">
-      <Link
-        href="/resources"
-        className="text-sm text-blue-600 hover:underline mb-6 inline-block"
-      >
-        ← Back to Resources
-      </Link>
-      <h1 className="text-4xl font-bold mb-2">{article.title}</h1>
-      <p className="text-gray-500 mb-8">{article.date}</p>
+    <main className="bg-gray-50 min-h-screen">
+      {/* 🖼️ Header Image */}
+      {article.image && (
+        <div className="relative w-full h-64 md:h-80 lg:h-96">
+          <Image
+            src={article.image}
+            alt={article.title}
+            fill
+            className="object-cover brightness-75"
+            priority
+          />
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
+            <h1 className="text-4xl md:text-5xl font-bold drop-shadow-lg mb-2">
+              {article.title}
+            </h1>
+            <p className="text-gray-200 text-lg">{article.date}</p>
+          </div>
+        </div>
+      )}
 
-      <div className="space-y-4 text-lg leading-relaxed text-gray-800">
-        {article.content.map((para, idx) => (
-          <p key={idx} dangerouslySetInnerHTML={{ __html: para }} />
-        ))}
-      </div>
+      {/* 📝 Article Content */}
+      <article className="max-w-3xl mx-auto px-6 md:px-8 py-16 bg-white shadow-sm rounded-xl -mt-10 relative z-10">
+        <Link
+          href="/resources"
+          className="text-sm text-blue-600 hover:underline mb-6 inline-block"
+        >
+          ← Back to Resources
+        </Link>
+
+        <div className="prose prose-lg prose-blue max-w-none">
+          {article.content.map((para, idx) => (
+            <ReactMarkdown key={idx}>{para}</ReactMarkdown>
+          ))}
+        </div>
+      </article>
     </main>
   );
 }
