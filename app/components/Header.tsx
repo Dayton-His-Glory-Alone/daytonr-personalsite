@@ -34,7 +34,7 @@ export default function Header() {
             <Link href="/resources" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
               Resources
             </Link>
-            <Link href="/contact" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+            <Link href="mailto:dayton@letsoutstand.com" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
               Contact
             </Link>
           </div>
