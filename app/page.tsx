@@ -57,7 +57,7 @@ export default function Home() {
           </h1>
 
           <p className="text-lg max-w-2xl mx-auto mb-6">
-            I help businesses like yours expand their digital footprint, automate
+            I help businesses expand their digital footprint, automate
             processes, and build meaningful connections with customers.
           </p>
 
