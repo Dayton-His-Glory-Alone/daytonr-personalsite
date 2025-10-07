@@ -5,7 +5,7 @@ import Header from "./components/Header";
 
 export default function Home() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const words = ["perform", "shine","sell","pace", "grow", "stand"];
+  const words = ["perform.", "shine.","sell.","pace.", "grow.", "stand."];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -36,7 +36,7 @@ export default function Home() {
 
         {/* Hero Content */}
         <div className="relative z-10 px-6">
-          <h1 className="text-4xl font-bold mb-4">
+          <h1 className="text-6xl font-bold mb-4">
             Empower Your Business To
             <br />
             <span className="inline-block perspective-1000">
@@ -54,7 +54,6 @@ export default function Home() {
               </span>
             </span>
             <br />
-            with Strategic Marketing & Custom Software
           </h1>
 
           <p className="text-lg max-w-2xl mx-auto mb-6">
