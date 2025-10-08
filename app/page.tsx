@@ -264,28 +264,29 @@ export default function Home() {
       <section id="my-process" className="py-20 px-6 lg:px-20 bg-gray-50 w-full">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
           {/* Left: Image */}
-          <motion.div
-            className="w-full lg:w-1/3 flex justify-center"
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-          >
-            <Image
-              src="/dayton_profile.png"
-              alt="Dayton Profile"
-              width={300}
-              height={300}
-              className="rounded-2xl"
-            />
+<motion.div
+  className="w-full lg:w-1/3 flex flex-col items-center justify-center space-y-6"
+  initial={{ opacity: 0, x: -30 }}
+  animate={{ opacity: 1, x: 0 }}
+>
+  <Image
+    src="/dayton_profile.png"
+    alt="Dayton Profile"
+    width={300}
+    height={300}
+    className="rounded-2xl"
+  />
 
-          </motion.div>
-            <a
-          href="https://calendar.app.google/9QHdAtmbYtDjjcDM9"
-          target="_blank"
-          rel="noopener noreferrer"
-        className="inline-block bg-[#039BE5] text-white px-8 py-4 rounded-lg shadow-lg hover:bg-[#0288d1] transition font-semibold text-lg"
-          >
-  Schedule a Call with Dayton
-</a>
+  <a
+    href="https://calendar.app.google/9QHdAtmbYtDjjcDM9"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-[#039BE5] text-white px-8 py-4 rounded-lg shadow-lg hover:bg-[#0288d1] transition font-semibold text-lg"
+  >
+    Schedule a Call with Dayton
+  </a>
+</motion.div>
+
           {/* Right: Steps */}
           <motion.div
             className="w-full lg:w-2/3"
