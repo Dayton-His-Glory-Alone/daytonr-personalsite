@@ -276,6 +276,8 @@ export default function Home() {
               height={300}
               className="rounded-2xl"
             />
+
+          </motion.div>
             <a
           href="https://calendar.app.google/9QHdAtmbYtDjjcDM9"
           target="_blank"
@@ -284,8 +286,6 @@ export default function Home() {
           >
   Schedule a Call with Dayton
 </a>
-          </motion.div>
-
           {/* Right: Steps */}
           <motion.div
             className="w-full lg:w-2/3"
