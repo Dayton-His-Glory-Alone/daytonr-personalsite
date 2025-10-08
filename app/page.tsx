@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link";
 import React, { useEffect, useState } from "react"; 
+import WhatWeveDoneSection from "./components/WhatWeveDoneSection";
 import Header from "./components/Header";
 
 export default function Home() {
@@ -201,6 +202,8 @@ export default function Home() {
           </a>
         </div>
       </section>
+      
+<WhatWeveDoneSection />
       
       {/* Footer */}
       <footer className="text-center py-10 px-6 bg-[#f0ede6]">
