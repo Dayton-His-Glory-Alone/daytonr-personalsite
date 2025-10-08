@@ -231,7 +231,7 @@ export default function Home() {
           </motion.h2>
 
           <p className="text-lg text-gray-600 mb-10">
-            Are you stuck doing tasks that could be automated?
+            Are you stuck doing repetitive tasks?
           </p>
 
           <ul className="text-left inline-block space-y-4">
