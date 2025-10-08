@@ -12,9 +12,7 @@ export default function Home() {
   const automationTasks = [
     "Paying invoices",
     "Filling out forms",
-    "Entering data",
     "Responding to repetitive emails",
-    "Scheduling meetings manually",
     "Copying data between systems",
     "Tracking expenses by hand",
   ];
@@ -233,7 +231,7 @@ export default function Home() {
           </motion.h2>
 
           <p className="text-lg text-gray-600 mb-10">
-            Are you always stuck doing tasks that could be automated?
+            Are you stuck doing tasks that could be automated?
           </p>
 
           <ul className="text-left inline-block space-y-4">
@@ -276,7 +274,7 @@ export default function Home() {
               alt="Dayton Profile"
               width={300}
               height={300}
-              className="rounded-2xl shadow-lg"
+              className="rounded-2xl"
             />
           </motion.div>
 
@@ -286,8 +284,16 @@ export default function Home() {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
           >
+            <a
+  href="https://calendar.app.google/9QHdAtmbYtDjjcDM9"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block bg-[#039BE5] text-white px-8 py-4 rounded-lg shadow-lg hover:bg-[#0288d1] transition font-semibold text-lg"
+>
+  Schedule a Call with Dayton
+</a>
             <h2 className="text-4xl font-bold mb-8 text-gray-900 text-center lg:text-left">
-              My Process
+              Our Process
             </h2>
 
             <div className="space-y-8">
