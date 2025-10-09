@@ -229,7 +229,14 @@ export default function Home() {
           >
             Buy Back Your Time
           </motion.h2>
-
+<Image 
+  src="/return.gif"
+  alt="buy back"
+  width={300}
+  height={300}
+  className="rounded-xl"
+  unoptimized
+/>
           <p className="text-lg text-gray-600 mb-10">
             Are you stuck doing repetitive tasks?
           </p>
