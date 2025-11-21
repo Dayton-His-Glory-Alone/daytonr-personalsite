@@ -19,7 +19,7 @@ export default function Home() {
   
   const processSteps = [
     { title: "Shadow 👤", desc: "Assess needs and areas of opportunity." },
-    { title: "Consult 🗣️", desc: "Make sure were solving the right problems." },
+    { title: "Consult 🗣️", desc: "Make sure we're solving the right problems." },
     { title: "Design 📝", desc: "Create efficient systems and automations." },
     { title: "Review 🔍", desc: "Ensure everything works seamlessly." },
     { title: "Savings Guaranteed ⌛💲", desc: "You save time, energy, and money." },
@@ -307,7 +307,7 @@ export default function Home() {
 
               <div className="border-l-4 border-[#039BE5] pl-4 py-2 bg-blue-50 rounded-r">
                 <p className="text-sm text-gray-700 italic">
-                  "Building a platform that revolutionizes how carriers bid on freight — streamlined, efficient, and powerful."
+                  &ldquo;Building a platform that revolutionizes how carriers bid on freight — streamlined, efficient, and powerful.&rdquo;
                 </p>
               </div>
 
