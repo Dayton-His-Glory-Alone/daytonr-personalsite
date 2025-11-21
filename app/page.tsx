@@ -19,7 +19,7 @@ export default function Home() {
   
   const processSteps = [
     { title: "Shadow 👤", desc: "Assess needs and areas of opportunity." },
-    { title: "Consult 🗣️", desc: "Make sure we're solving the right problems." },
+    { title: "Consult 🗣️", desc: "Make sure were solving the right problems." },
     { title: "Design 📝", desc: "Create efficient systems and automations." },
     { title: "Review 🔍", desc: "Ensure everything works seamlessly." },
     { title: "Savings Guaranteed ⌛💲", desc: "You save time, energy, and money." },
