@@ -220,6 +220,8 @@ export default function Home() {
 
 
 {/* What We're Working On Section */}
+
+{/* What We're Working On Section */}
 <section
   id="what-were-working-on"
   className="relative py-20 px-8"
@@ -236,14 +238,14 @@ export default function Home() {
   {/* Content */}
   <div className="relative z-10">
     <motion.h2
-      className="text-4xl font-bold text-center mb-4 text-gray-900"
+      className="text-4xl font-bold text-center mb-4 text-white"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
     >
       What We&apos;re Working On...
     </motion.h2>
     <motion.p
-      className="text-center text-gray-600 mb-12 max-w-2xl mx-auto"
+      className="text-center text-gray-200 mb-12 max-w-2xl mx-auto"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.2 }}
@@ -251,17 +253,87 @@ export default function Home() {
       Current projects in our workshop — stay tuned for innovation in progress!
     </motion.p>
 
-    {/* Existing motion.div content remains unchanged */}
     <motion.div
       className="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden"
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 0.3 }}
     >
-      {/* ...rest of your content */}
+      <div className="relative h-64 bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600 flex items-center justify-center overflow-hidden">
+        {/* Animated Workshop Background */}
+        <div className="absolute inset-0 opacity-20">
+          <motion.div
+            className="absolute top-10 left-10 w-20 h-20 bg-white rounded-full"
+            animate={{ x: [0, 30, 0], y: [0, -20, 0] }}
+            transition={{ duration: 4, repeat: Infinity }}
+          />
+          <motion.div
+            className="absolute bottom-10 right-10 w-16 h-16 bg-white rounded-full"
+            animate={{ x: [0, -40, 0], y: [0, 30, 0] }}
+            transition={{ duration: 5, repeat: Infinity }}
+          />
+          <motion.div
+            className="absolute top-1/2 left-1/2 w-24 h-24 border-4 border-white rounded-full"
+            animate={{ rotate: 360 }}
+            transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+          />
+        </div>
+
+        {/* Main Icon/Badge */}
+        <motion.div
+          className="relative z-10 bg-white p-6 rounded-full shadow-xl"
+          whileHover={{ scale: 1.1, rotate: 5 }}
+        >
+          <span className="text-6xl">⚙️</span>
+        </motion.div>
+      </div>
+
+      <div className="p-8">
+        <motion.h3
+          className="text-3xl font-bold text-gray-900 mb-3"
+          whileHover={{ x: 5 }}
+        >
+          <a
+            href="https://nussbaumtech.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#039BE5] transition-colors"
+          >
+            Nussbaum Technology Website
+          </a>
+        </motion.h3>
+
+        <p className="text-lg text-gray-600 mb-6">
+          Designing a modern website for a truck carrier freight bidding software platform.
+        </p>
+
+        <div className="flex flex-wrap gap-3 mb-6">
+          <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+            UI/UX Design
+          </span>
+          <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
+            WordPress
+          </span>
+          <span className="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">
+            B2B Platform
+          </span>
+        </div>
+
+        <motion.a
+          href="https://nussbaumtech.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition font-semibold"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          Visit Nussbaum Tech →
+        </motion.a>
+      </div>
     </motion.div>
   </div>
 </section>
+
 
       
         {/* Buy Back Your Time Section */}
