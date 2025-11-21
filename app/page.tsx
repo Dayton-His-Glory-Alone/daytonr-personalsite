@@ -267,7 +267,7 @@ export default function Home() {
                 className="relative z-10 bg-white p-6 rounded-full shadow-xl"
                 whileHover={{ scale: 1.1, rotate: 5 }}
               >
-                <span className="text-6xl">🚚</span>
+                <span className="text-6xl">⚙️</span>
               </motion.div>
             </div>
 
@@ -282,33 +282,24 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="hover:text-[#039BE5] transition-colors"
                 >
-                  Nussbaum Technology Website 🛠️
+                  Nussbaum Technology Website
                 </a>
               </motion.h3>
               
               <p className="text-lg text-gray-600 mb-6">
-                Designing a modern, intuitive website for a cutting-edge truck carrier freight bidding software platform.
+                Designing a modern website for a truck carrier freight bidding software platform.
               </p>
 
               <div className="flex flex-wrap gap-3 mb-6">
                 <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
-                  🎨 UI/UX Design
+                  UI/UX Design
                 </span>
                 <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
-                  🚀 Next.js
+                  WordPress
                 </span>
                 <span className="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">
-                  💼 B2B Platform
+                  B2B Platform
                 </span>
-                <span className="px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">
-                  🔧 In Progress
-                </span>
-              </div>
-
-              <div className="border-l-4 border-[#039BE5] pl-4 py-2 bg-blue-50 rounded-r">
-                <p className="text-sm text-gray-700 italic">
-                  &ldquo;Building a platform that revolutionizes how carriers bid on freight — streamlined, efficient, and powerful.&rdquo;
-                </p>
               </div>
 
               <motion.a
